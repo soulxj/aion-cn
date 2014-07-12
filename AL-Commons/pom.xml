@@ -50,9 +50,6 @@
                 <artifactId>buildnumber-maven-plugin</artifactId>
                 <version>1.0</version>
                 <configuration>
-                    <providerImplementations>
-                        <svn>javasvn</svn>
-                    </providerImplementations>
                     <revisionOnScmFailure>undefined</revisionOnScmFailure>
                 </configuration>
                 <executions>
