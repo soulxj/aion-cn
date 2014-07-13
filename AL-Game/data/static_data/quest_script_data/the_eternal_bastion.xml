@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quest_scripts>
+	<!--
+		[BEGIN] SUMMARY
+			13305 [TODO] Meet Stifas the Stiff
+			18030 [TODO] [Alliance] Accounting for Orders
+			18031 [TODO] [Alliance] Eternal Campers
+			18032 [TODO] [Alliance] Artillery Action
+			18033 [TODO] [Alliance] Retreat Into Death
+			18034 [TODO] [Alliance] The Follow-Through
+			18035 [TODO] [Alliance] DRAKINT
+			18036 [TODO] Bastions Are Eternal; Positions Are Not
+			23305 [TODO] A Fierce Struggle
+			28030 [TODO] [Alliance] Protecting The Eternal Bastion
+			28031 [TODO] [Alliance] Eliminating the Bind Point Commander
+			28032 [TODO] [Alliance] The Enemy's Key Strength
+			28033 [TODO] [Alliance] Confusing the Chain of Command
+			28034 [TODO] [Alliance] Conquering Ambitions
+			28035 [TODO] [Alliance] Trust In None, But Verify
+			28036 [TODO] Interrogate Kvash
+		[END] SUMMARY
+	-->
+	<!-- REPORTING QUESTS -->
+	<!-- COLLECTING QUESTS -->
+	<!-- HUNTING QUESTS -->
+	<!-- ITEM ORDERS QUESTS -->
+</quest_scripts>

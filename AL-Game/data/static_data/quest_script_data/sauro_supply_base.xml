@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quest_scripts>
+	<!-- 
+		[BEGIN] SUMMARY
+			18910 [TODO] The Sauro Supply Base
+			18911 [TODO] [Group] Killing Spree
+			18912 [TODO] [Group] Slay Sheba, Blind Beritra
+			18913 [TODO] [Group] What Sheba Hath Wrought
+			18914 [TODO] [Group] Hunks of Junk
+			18915 [TODO] [Group] Sauro: The Final Assault
+			18916 [TODO] [Group] For the Folks Back Home
+			28910 [TODO] [Group] A Stabbing in Sauro
+			28911 [TODO] [Group] Doomed Commanders
+			28912 [TODO] [Group] Unlock the Mystery Box
+			28913 [TODO] [Group] Alas, Poor Shugo, Nyerk
+			28914 [TODO] [Group] Prototype of Destruction
+			28915 [TODO] [Group] Demolition Mania
+			28916 [TODO] [Group] Precious Seal
+		[END] SUMMARY
+	-->
+	<!-- REPORTING QUESTS -->
+	<!-- COLLECTING QUESTS -->
+	<!-- HUNTING QUESTS -->
+	<!-- ITEM ORDERS QUESTS -->
+</quest_scripts>

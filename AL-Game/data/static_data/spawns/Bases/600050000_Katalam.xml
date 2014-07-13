@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spawns>
+	<spawn_map map_id="600050000">
+		<base_spawn id="6050"> <!-- Occupier's Lounge -->
+			<simple_race race="ELYOS">
+				<!-- Elyos Territory -->
+				<spawn npc_id="801600">
+					<spot x="225.67972" y="835.3145" z="216.086"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231630" handler="BOSS">
+					<spot x="233.54507" y="835.1746" z="210.875" h="10"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="ASMODIANS">
+				<!-- Asmodians Territory -->
+				<spawn npc_id="801601">
+					<spot x="225.67972" y="835.3145" z="216.086"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231631" handler="BOSS">
+					<spot x="233.54507" y="835.1746" z="210.875" h="10"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="NPC">
+				<!-- Balaur Territory -->
+				<spawn npc_id="801602">
+					<spot x="225.67972" y="835.3145" z="216.086"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231632" handler="BOSS">
+					<spot x="233.54507" y="835.1746" z="210.875" h="10"/>
+				</spawn>
+			</simple_race>
+		</base_spawn>
+		<base_spawn id="6051"> <!-- Spiralroot Shelter -->
+			<simple_race race="ELYOS">
+				<!-- Elyos Territory -->
+				<spawn npc_id="801603">
+					<spot x="138.16624" y="2208.9534" z="192.916"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231633" handler="BOSS">
+					<spot x="137.43071" y="2201.1826" z="184.125" h="90"/>
+				</spawn>
+				<!-- Spiralroot Garrison Shieldcaptain -->
+				<spawn npc_id="231870" handler="ATTACKER">
+					<spot x="111.5267" y="2118.1604" z="183.5000" h="10"/>
+				</spawn>
+				<!-- Spiralroot Garrison Assassin -->
+				<spawn npc_id="232140" handler="ATTACKER">
+					<spot x="140.2245" y="2201.2441" z="184.125" h="60"/>
+					<spot x="134.62091" y="2201.6545" z="184.125"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="ASMODIANS">
+				<!-- Asmodians Territory -->
+				<spawn npc_id="801604">
+					<spot x="138.16624" y="2208.9534" z="192.916"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231634" handler="BOSS">
+					<spot x="137.43071" y="2201.1826" z="184.125" h="90"/>
+				</spawn>
+				<!-- Spiralroot Shieldcaptain -->
+				<spawn npc_id="231871" handler="ATTACKER">
+					<spot x="111.5267" y="2118.1604" z="183.5000" h="10"/>
+				</spawn>
+				<!-- Spiralroot Assassin -->
+				<spawn npc_id="232141" handler="ATTACKER">
+					<spot x="140.2245" y="2201.2441" z="184.1250" h="60"/>
+					<spot x="134.6209" y="2201.6545" z="184.1250"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="NPC">
+				<!-- Balaur Territory -->
+				<spawn npc_id="801605">
+					<spot x="138.16624" y="2208.9534" z="192.916"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231635" handler="BOSS">
+					<spot x="137.43071" y="2201.1826" z="184.125" h="90"/>
+				</spawn>
+				<!-- Spiralroot Subjugator Tesserari -->
+				<spawn npc_id="231872" handler="ATTACKER">
+					<spot x="111.5267" y="2118.1604" z="183.5000" h="10"/>
+				</spawn>
+				<!-- Spiralroot Subjugator Assassin -->
+				<spawn npc_id="232142" handler="ATTACKER">
+					<spot x="140.2245" y="2201.2441" z="184.125" h="60"/>
+					<spot x="134.62091" y="2201.6545" z="184.125"/>
+				</spawn>
+			</simple_race>
+		</base_spawn>
+		<base_spawn id="6052"> <!-- Beritran Foothold -->
+			<simple_race race="ELYOS">
+				<!-- Elyos Territory -->
+				<spawn npc_id="801606">
+					<spot x="1110.6884" y="511.85785" z="184.75"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231636" handler="BOSS">
+					<spot x="1099.0599" y="502.7759" z="184.8265" h="90"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="ASMODIANS">
+				<!-- Asmodians Territory -->
+				<spawn npc_id="801607">
+					<spot x="1110.6884" y="511.85785" z="184.75"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231637" handler="BOSS">
+					<spot x="1099.0599" y="502.7759" z="184.8265" h="90"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="NPC">
+				<!-- Balaur Territory -->
+				<spawn npc_id="801608">
+					<spot x="1110.6884" y="511.85785" z="184.75"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231638" handler="BOSS">
+					<spot x="1099.0599" y="502.7759" z="184.8265" h="90"/>
+				</spawn>
+			</simple_race>
+		</base_spawn>
+		<base_spawn id="6053"> <!-- Primeval Ruins -->
+			<simple_race race="ELYOS">
+				<!-- Elyos Territory -->
+				<spawn npc_id="801609">
+					<spot x="844.6785" y="2759.2375" z="190.57112"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231639" handler="BOSS">
+					<spot x="853.6359" y="2757.4578" z="182.125" h="110"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="ASMODIANS">
+				<!-- Asmodians Territory -->
+				<spawn npc_id="801610">
+					<spot x="844.6785" y="2759.2375" z="190.57112"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231640" handler="BOSS">
+					<spot x="853.6359" y="2757.4578" z="182.125" h="110"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="NPC">
+				<!-- Balaur Territory -->
+				<spawn npc_id="801611">
+					<spot x="844.6785" y="2759.2375" z="190.57112"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231641" handler="BOSS">
+					<spot x="853.6359" y="2757.4578" z="182.125" h="110"/>
+				</spawn>
+			</simple_race>
+		</base_spawn>
+		<base_spawn id="6054"> <!-- Broken Cliff Camp -->
+			<simple_race race="ELYOS">
+				<!-- Elyos Territory -->
+				<spawn npc_id="801612">
+					<spot x="1571.7942" y="1472.2792" z="129.625"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231642" handler="BOSS">
+					<spot x="1566.8943" y="1478.415" z="129.4309" h="30"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="ASMODIANS">
+				<!-- Asmodians Territory -->
+				<spawn npc_id="801613">
+					<spot x="1571.7942" y="1472.2792" z="129.625"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231643" handler="BOSS">
+					<spot x="1566.8943" y="1478.415" z="129.4309" h="30"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="NPC">
+				<!-- Balaur Territory -->
+				<spawn npc_id="801614">
+					<spot x="1571.7942" y="1472.2792" z="129.625"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231644" handler="BOSS">
+					<spot x="1566.8943" y="1478.415" z="129.4309" h="30"/>
+				</spawn>
+			</simple_race>
+		</base_spawn>
+		<base_spawn id="6055"> <!-- Irigani Keep -->
+			<simple_race race="ELYOS">
+				<!-- Elyos Territory -->
+				<spawn npc_id="801615">
+					<spot x="1686.3455" y="1121.6199" z="195.51602"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231645" handler="BOSS">
+					<spot x="1685.6053" y="1114.662" z="186.51433" h="87"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="ASMODIANS">
+				<!-- Asmodians Territory -->
+				<spawn npc_id="801616">
+					<spot x="1686.3455" y="1121.6199" z="195.51602"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231646" handler="BOSS">
+					<spot x="1685.6053" y="1114.662" z="186.51433" h="87"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="NPC">
+				<!-- Balaur Territory -->
+				<spawn npc_id="801617">
+					<spot x="1686.3455" y="1121.6199" z="195.51602"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231647" handler="BOSS">
+					<spot x="1685.6053" y="1114.662" z="186.51433" h="87"/>
+				</spawn>
+			</simple_race>
+		</base_spawn>
+		<base_spawn id="6056"> <!-- Crumbling Redoubt -->
+			<simple_race race="ELYOS">
+				<!-- Elyos Territory -->
+				<spawn npc_id="801618">
+					<spot x="1544.114" y="2260.9583" z="184.08958"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231648" handler="BOSS">
+					<spot x="1549.8088" y="2263.9612" z="178.87689"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="ASMODIANS">
+				<!-- Asmodians Territory -->
+				<spawn npc_id="801619">
+					<spot x="1544.114" y="2260.9583" z="184.08958"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231649" handler="BOSS">
+					<spot x="1549.8088" y="2263.9612" z="178.87689"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="NPC">
+				<!-- Balaur Territory -->
+				<spawn npc_id="801620">
+					<spot x="1544.114" y="2260.9583" z="184.08958"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231650" handler="BOSS">
+					<spot x="1549.8088" y="2263.9612" z="178.87689"/>
+				</spawn>
+			</simple_race>
+		</base_spawn>
+		<base_spawn id="6057"> <!-- Windswept Camp -->
+			<simple_race race="ELYOS">
+				<!-- Elyos Territory -->
+				<spawn npc_id="801621">
+					<spot x="1902.3711" y="1179.6218" z="259.25"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231651" handler="BOSS">
+					<spot x="1895.0594" y="1182.2532" z="259.2658" h="30"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="ASMODIANS">
+				<!-- Asmodians Territory -->
+				<spawn npc_id="801622">
+					<spot x="1902.3711" y="1179.6218" z="259.25"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231652" handler="BOSS">
+					<spot x="1895.0594" y="1182.2532" z="259.2658" h="30"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="NPC">
+				<!-- Balaur Territory -->
+				<spawn npc_id="801623">
+					<spot x="1902.3711" y="1179.6218" z="259.25"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231653" handler="BOSS">
+					<spot x="1895.0594" y="1182.2532" z="259.2658" h="30"/>
+				</spawn>
+			</simple_race>
+		</base_spawn>
+		<base_spawn id="6058"> <!-- Sillus Pass Watchpost -->
+			<simple_race race="ELYOS">
+				<!-- Elyos Territory -->
+				<spawn npc_id="801624">
+					<spot x="2492.3337" y="1830.4594" z="325.625"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231654" handler="BOSS">
+					<spot x="2499.259" y="1835.7627" z="325.81384" h="33"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="ASMODIANS">
+				<!-- Asmodians Territory -->
+				<spawn npc_id="801625">
+					<spot x="2492.3337" y="1830.4594" z="325.625"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231655" handler="BOSS">
+					<spot x="2499.259" y="1835.7627" z="325.81384" h="33"/>
+				</spawn>
+			</simple_race>
+			<simple_race race="NPC">
+				<!-- Balaur Territory -->
+				<spawn npc_id="801626">
+					<spot x="2492.3337" y="1830.4594" z="325.625"/>
+				</spawn>
+				<!-- Territory Boss -->
+				<spawn npc_id="231656" handler="BOSS">
+					<spot x="2499.259" y="1835.7627" z="325.81384" h="33"/>
+				</spawn>
+			</simple_race>
+		</base_spawn>
+	</spawn_map>
+</spawns>

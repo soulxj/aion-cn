@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spawns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<spawn_map map_id="300700000">
+		<!-- Ancient Treasure Box -->
+		<spawn npc_id="701662">
+			<spot x="195.89" y="619.05" z="366.12" h="115"/>
+			<spot x="195.99" y="552.5" z="366.12" h="5"/>
+			<spot x="207.52" y="684.07" z="366.12" h="105"/>
+			<spot x="207.87" y="486.88" z="366.12" h="15"/>
+			<spot x="229.45" y="425.69" z="366.12" h="25"/>
+			<spot x="230.34" y="423.96" z="366.12" h="25"/>
+		</spawn>
+		<!-- Ancient Treasure Box -->
+		<spawn npc_id="701663">
+			<spot x="193.59" y="619.05" z="366.32" h="115"/>
+			<spot x="193.95" y="552.01" z="366.32" h="5"/>
+			<spot x="205.53" y="684.4" z="366.32" h="105"/>
+			<spot x="205.74" y="486.37" z="366.32" h="15"/>
+			<spot x="227.48" y="423.8" z="366.32" h="25"/>
+		</spawn>
+		<!-- Golden Treasure Box -->
+		<spawn npc_id="701664">
+			<spot x="230.31" y="746.76" z="366.12" h="95"/>
+		</spawn>
+		<!-- IDAB1_SensoryArea_Timer_C -->
+		<spawn npc_id="206089">
+			<spot x="572.72" y="585.93" z="354" h="60"/>
+		</spawn>
+		<!-- Shining Magic Ward -->
+		<spawn npc_id="700455">
+			<spot x="672.8343" y="606.2250" z="321.1900" static_id="1"/>
+		</spawn>
+	</spawn_map>
+</spawns>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quest_scripts>
+	<!-- 
+		[BEGIN] SUMMARY
+			18010 [TODO] [Group] Give Me Liberty!
+			18011 [TODO] Fortress Talk
+			18012 [TODO] [Group] Subject of My Ire
+			18013 [TODO] [Group] That Stuff Will Kill You
+			18014 [TODO] [Group] Light Reading
+			28010 [TODO] Can You Hear the Screams? 1
+			28011 [TODO] [Group] A Final End
+			28012 [TODO] [Group] On the Shoulders of Giants
+			28013 [TODO] [Group] Mutation Aggravation
+			28014 [TODO] Can You Hear the Screams? 2
+		[END] SUMMARY
+	-->
+	<!-- REPORTING QUESTS -->
+	<!-- COLLECTING QUESTS -->
+	<!-- HUNTING QUESTS -->
+	<!-- ITEM ORDERS QUESTS -->
+</quest_scripts>
