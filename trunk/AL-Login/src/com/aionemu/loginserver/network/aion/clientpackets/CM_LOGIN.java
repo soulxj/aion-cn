@@ -65,9 +65,9 @@ public class CM_LOGIN extends AionClientPacket {
 	@Override
 	protected void readImpl() {
 		readD();
-		if (getRemainingBytes() >= 128) {
-			data = readB(128);
-		}
+        data = readB(128);
+        readD();//sessionId
+        readB(31);//garbage
 	}
 
 	@Override
@@ -80,6 +80,8 @@ public class CM_LOGIN extends AionClientPacket {
 			Cipher rsaCipher = Cipher.getInstance("RSA/ECB/nopadding");
 			rsaCipher.init(Cipher.DECRYPT_MODE, getConnection().getRSAPrivateKey());
 			decrypted = rsaCipher.doFinal(data, 0, 128);
+
+
 		}
 		catch (GeneralSecurityException e) {
 			sendPacket(new SM_LOGIN_FAIL(AionAuthResponse.SYSTEM_ERROR));
@@ -87,6 +89,9 @@ public class CM_LOGIN extends AionClientPacket {
 		}
 		String user = new String(decrypted, 64, 32).trim().toLowerCase();
 		String password = new String(decrypted, 96, 32).trim();
+
+        log.info("userName=" + user);
+        log.info("password=" + password);
 
 		@SuppressWarnings("unused")
 		int ncotp = decrypted[0x7c];

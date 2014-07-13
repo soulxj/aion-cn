@@ -21,6 +21,7 @@ import java.util.Map;
 
 import com.aionemu.loginserver.GameServerInfo;
 import com.aionemu.loginserver.GameServerTable;
+import com.aionemu.loginserver.configs.Config;
 import com.aionemu.loginserver.controller.AccountController;
 import com.aionemu.loginserver.network.aion.AionServerPacket;
 import com.aionemu.loginserver.network.aion.LoginConnection;
@@ -39,6 +40,7 @@ public class SM_SERVER_LIST extends AionServerPacket {
 		Map<Integer, Integer> charactersCountOnServer = null;
 
 		int accountId = con.getAccount().getId();
+        int accessLevel = con.getAccount().getAccessLevel();
 		int maxId = 0;
 
 		charactersCountOnServer = AccountController.getGSCharacterCountsFor(accountId);
@@ -57,8 +59,13 @@ public class SM_SERVER_LIST extends AionServerPacket {
 			writeH(gsi.getCurrentPlayers());// currentPlayers
 			writeH(gsi.getMaxPlayers());// maxPlayers
 			writeC(gsi.isOnline() ? 1 : 0);// ServerStatus, up=1
-			writeD(1);// bits);
-			writeC(0);// server.brackets ? 0x01 : 0x00);
+            // bits); 1 display table cell; 0 not used
+            if(!Config.MAINTENANCE_MOD){
+                writeD(0x01);
+            }else{
+                writeD(accessLevel >= Config.MAINTENANCE_MOD_GMLEVEL ? 0x01 : 0x00);
+            }
+			writeC(1);// server.brackets ? 0x01 : 0x00);
 		}
 
 		writeH(maxId + 1);

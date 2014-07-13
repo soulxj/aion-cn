@@ -50,6 +50,6 @@ public class SM_AUTH_GG extends AionServerPacket {
 		writeD(0x00);
 		writeD(0x00);
 		writeD(0x00);
-		writeB(new byte[0x13]);
+		writeB(new byte[0x19]);
 	}
 }
