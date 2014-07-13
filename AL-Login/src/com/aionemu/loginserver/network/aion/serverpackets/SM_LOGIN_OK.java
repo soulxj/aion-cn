@@ -55,7 +55,6 @@ public class SM_LOGIN_OK extends AionServerPacket {
 		writeD(loginOk);
 		writeD(0x00);
 		writeD(0x00);
-		writeD(0x000003ea);
 		writeD(0x00);
 		writeD(0x00);
 		writeD(0x00);
@@ -64,6 +63,7 @@ public class SM_LOGIN_OK extends AionServerPacket {
 		writeD(0x00);
 		writeD(0x00);
 		writeD(0x00);
-		writeB(new byte[0x13]);
+		writeD(0x00);
+		writeB(new byte[0x19]);
 	}
 }

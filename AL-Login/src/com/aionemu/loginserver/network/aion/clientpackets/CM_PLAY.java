@@ -58,6 +58,7 @@ public class CM_PLAY extends AionClientPacket {
 		accountId = readD();
 		loginOk = readD();
 		servId = (byte) readC();
+        readB(14);
 	}
 
 	/**

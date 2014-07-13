@@ -56,7 +56,7 @@ public class CM_SERVER_LIST extends AionClientPacket {
 	protected void readImpl() {
 		accountId = readD();
 		loginOk = readD();
-		readD();// unk
+		readB(15);// unk
 	}
 
 	/**

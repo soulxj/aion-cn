@@ -235,7 +235,7 @@ public class AccountController {
 		// if everything was OK
 		getAccountDAO().updateLastIp(account.getId(), connection.getIP());
 	    // last mac is updated after receiving packet from gameserver
-		getAccountDAO().updateMembership(account.getId());
+		//getAccountDAO().updateMembership(account.getId());
 
 		return AionAuthResponse.AUTHED;
 	}
@@ -266,7 +266,6 @@ public class AccountController {
 	 * 
 	 * @param accountId
 	 *          id of account
-	 * @param adress
 	 *          new macAdress
 	 * @return refreshed or not
 	 */
