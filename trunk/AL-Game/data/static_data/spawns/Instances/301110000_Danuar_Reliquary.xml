@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spawns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<spawn_map map_id="301110000">
+		<!-- Cursed Queen Modor -->
+		<spawn npc_id="231304">
+			<spot x="255.49063" y="293.35785" z="257.82083" h="90"/>
+		</spawn>
+		<!-- Danuar Reliquary Exit -->
+		<spawn npc_id="730843">
+			<spot x="255.66669" y="263.78525" z="243.71048" h="86"/>
+		</spawn>
+		<!-- Danuar Reliquary Novun -->
+		<spawn npc_id="284377">
+			<spot x="256.57727" y="278.18225" z="242.99603" h="90"/>
+		</spawn>
+		<!-- Enraged Queen Modor -->
+		<spawn npc_id="231305">
+			<spot x="255.98627" y="259.01361" z="254.57672" h="90"/>
+		</spawn>
+		<!-- Hoarfrost Acheron Drake -->
+		<spawn npc_id="284382">
+			<spot x="266.26517" y="273.97614" z="244.48376" h="83"/>
+		</spawn>
+		<!-- Idean Lapilima -->
+		<spawn npc_id="284378">
+			<spot x="246.65663" y="275.51996" z="242.99603" h="96"/>
+			<spot x="248.03435" y="263.18369" z="243.28584" h="96"/>
+		</spawn>
+		<!-- Idean Obscura -->
+		<spawn npc_id="284379">
+			<spot x="262.16617" y="266.0946" z="243.08418" h="90"/>
+			<spot x="266.26517" y="273.97614" z="242.99603" h="83"/>
+		</spawn>
+		<!-- Modor's Bodyguard -->
+		<spawn npc_id="284380">
+			<spot x="256.57727" y="278.18225" z="244.48376" h="90"/>
+		</spawn>
+		<!-- Vengeful Reaper -->
+		<spawn npc_id="284381">
+			<spot x="246.65663" y="275.51996" z="244.48376" h="96"/>
+		</spawn>
+		<!-- Weakened Danuar Ghost -->
+		<spawn npc_id="284663">
+			<spot x="256.57727" y="278.18225" z="246.63965" h="90"/>
+		</spawn>
+		<!-- Weakened Hoarfrost Acheron Drake -->
+		<spawn npc_id="284664">
+			<spot x="246.65663" y="275.51996" z="246.63965" h="96"/>
+		</spawn>
+		<!-- Weakened Idean Lapilima -->
+		<spawn npc_id="284660">
+			<spot x="246.65663" y="275.51996" z="245.5694" h="96"/>
+		</spawn>
+		<!-- Weakened Idean Obscura -->
+		<spawn npc_id="284661">
+			<spot x="266.26517" y="273.97614" z="245.5694" h="83"/>
+		</spawn>
+		<!-- Weakened Modor Guardian -->
+		<spawn npc_id="284662">
+			<spot x="266.26517" y="273.97614" z="246.63965" h="83"/>
+		</spawn>
+		<!-- Weakened Reliquary Jotun -->
+		<spawn npc_id="284659">
+			<spot x="256.57727" y="278.18225" z="245.5694" h="90"/>
+		</spawn>
+		<!-- Witch Queen Modor -->
+		<spawn npc_id="284386">
+			<spot x="253.06357" y="257.25073" z="243.19197"/>
+		</spawn>
+		<!-- Witch Queen Modor -->
+		<spawn npc_id="284387">
+			<spot x="256.54868" y="257.81851" z="244.21275"/>
+		</spawn>
+	</spawn_map>
+</spawns>

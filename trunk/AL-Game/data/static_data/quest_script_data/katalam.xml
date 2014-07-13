@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quest_scripts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quest_script_data.xsd">
+	<!--
+		[BEGIN] SUMMARY
+			10080 [TODO] To Katalam
+			10081 [TODO] Aftermath
+			10082 [TODO] A Reian Secret
+			10083 [TODO] A Reian Record
+			10084 [TODO] Survive by the Sword
+			10085 [TODO] Records Restored
+			12500 [SCRIPT] While You Were Gone
+			12501 [XML] Dastardly Daru
+			12502 [XML] Hazard Pay
+			12503 [XML] Spy in Hiding
+			12504 [SCRIPT] The Unwalking Wounded
+			12505 [TODO] Knocking On Their Door
+			12506 [SCRIPT] Military Intelligence?
+			12507 [XML] A Deadly Distraction
+			12508 [XML] Ally or Enemy?
+			12509 [SCRIPT] A Military Conspiracy
+			12510 [XML] A Scout in Need
+			12511 [XML] Clearing the Slippery Slope
+			12512 [XML] Deep Blue Something
+			12513 [XML] The Nose Always Knows
+			12514 [XML] Loras&apos; Little Acre
+			12515 [XML] They Eat Anything
+			12516 [XML] Attacking the Wind
+			12517 [XML] Facing the Frillnecks
+			12518 [XML] Try Hitting It
+			12519 [XML] Unsafe Haven
+			12520 [XML] Prepare the Red Carpet
+			12521 [XML] It Looked Like a Plant
+			12522 [TODO] Do You Hear What I Hear?
+			12523 [XML] It's a Metaphor, Silly
+			12524 [TODO] Many Balaur Died for This Information
+			12525 [TODO] Cleaning Up Their Messes
+			12526 [XML] Bulbus Bulbs of Bulbiness
+			12527 [TODO] Worth Publishing
+			12528 [XML] A Miserable Companion
+			12529 [TODO] Rava Recovery
+			12530 [TODO] Does This Look Inanimate To You?
+			12531 [TODO] The Great Fruit Robbery
+			12532 [TODO] Meating the Quota
+			12533 [TODO] Shugos Bearing Gifts
+			12534 [TODO] Trade Secrets
+			12535 [TODO] A Gentle Remembrance
+			12536 [TODO] Lifeline Preserver
+			12537 [TODO] That Which Endures
+			12538 [TODO] Divergent Devolution
+			12539 [TODO] Twilight of the Skurvs
+			12540 [TODO] Stop the Madness!
+			12541 [TODO] An Inconvenient Truth
+			12542 [TODO] Hot Lunch Delivery
+			12543 [TODO] Tasty Lunch Delivery
+			12544 [TODO] Perinrinerk's Quota
+			12545 [TODO] Daeva's Trash is Shugo's Treasure
+			12546 [TODO] Playing Both Sides
+			12547 [TODO] Breathing Down Shugo's Fur
+			12548 [TODO] I Haven't Seen Any Log Book
+			12549 [TODO] Fit for Worms
+			12550 [TODO] Ew... Icky!
+			12551 [TODO] Rest in Peace
+			12552 [TODO] Science Isn't Pretty
+			12553 [TODO] Mad Science Run Amok!
+			12554 [TODO] Seeds of Contamination
+			12555 [TODO] A Simple Plan
+			12556 [TODO] A Dangerous Expedition
+			12557 [TODO] Publish or Perish
+			12558 [TODO] Your Permanent Record
+			12559 [TODO] [Group] Danuar Ghost Stories
+			12560 [TODO] Enemies Abound
+			12561 [TODO] Have Arms, Will Travel
+			12562 [TODO] The Blues
+			12563 [TODO] For Fast Pain Relief, Try Kalgolem
+			12564 [TODO] The Novun Connection
+			12565 [TODO] Forgotten Knowledge
+			12566 [TODO] Chasing Rumors
+			12567 [TODO] [Coin] Get Your Own Supplies
+			12568 [TODO] [Coin] Arachna Attack
+			12569 [TODO] [Coin] Keeping Hope Alive
+			12570 [TODO] [Coin] Scum Splatter
+			12571 [TODO] [Coin] Encouraging Exploration
+			12800 [TODO] Sneaking!
+			12801 [TODO] The Way Out
+			12802 [TODO] Lesson of the Third Porgus
+			12803 [TODO] [Daily] Preemptions
+			12804 [TODO] Unwanted Visitors
+			12805 [TODO] The Lucky Necklace
+			12806 [TODO] Saving the Scouts
+			12807 [TODO] Shopping With the Enemy
+			12808 [TODO] [Weekly] Hold the Line
+			12809 [TODO] Rumors of the Fungie Queen
+			12810 [TODO] Wood You Kindly
+			12811 [TODO] Silence is Golden
+			12812 [TODO] [Weekly] Foothold of Light
+			12813 [TODO] [Weekly] Not Your Foothold Now
+			12814 [TODO] Securing the Drinking Water
+			12815 [TODO] Home Away from Home Improvements
+			12816 [TODO] Home Away From Home Cooking
+			12817 [TODO] For Better Wartime Vision
+			12818 [TODO] [Daily] Protect Our Protectors
+			12819 [TODO] [Daily] Defend Our Defenders
+			12820 [TODO] Maybe Seraphim Get a Special Rate?
+			12821 [TODO] Memory, All Alone in the Baku
+			12822 [TODO] Lessons from Past Campaigns
+			12823 [TODO] The Karnif Sleeps Tonight
+			12824 [TODO] [Daily] Creepers at the Gates
+			12825 [TODO] [Daily] A Probing Task
+			12826 [TODO] Spooky is as Spooky Does
+			12827 [TODO] Protoplasmic Comrades
+			12828 [TODO] Useful for Something
+			12829 [TODO] What's Six Sided and Kills Dredgions?
+			12830 [TODO] [Daily] Keeping the Keep from Foes
+			12831 [TODO] [Daily] Keeping the Keep from Fiends
+			12832 [TODO] An Unpleasant Odor
+			12833 [TODO] A Tree Grows in Katalam
+			12834 [TODO] [Daily] Redoubt Referendum
+			12835 [TODO] [Daily] Redoubt Remainders
+			12836 [TODO] [Group] Reduction in Force
+			12837 [TODO] [Group] Notoriety
+			12838 [TODO] [Daily] Keeping What Is Ours
+			12839 [TODO] [Daily] Bury the Balaur
+			12840 [TODO] Must be a Collectible
+			12841 [TODO] Docile Dangers
+			12842 [TODO] [Daily] Enemy to the Right
+			12843 [TODO] [Daily] Enemy to the Left
+			12844 [TODO] [Urgent Order] Anastasia's Request
+			12845 [TODO] [Urgent Order] Berden's Request
+			12846 [TODO] [Urgent Order] Asmodian Infiltrators
+			12847 [TODO] [Urgent Order] Diena's Request
+			12848 [TODO] [Urgent Order] Egnatia's Request
+			12849 [TODO] [Urgent Order] Fabiana's Request
+			12850 [TODO] [Urgent Order] Ginos's Request
+			12851 [TODO] [Urgent Order] Herminia's Request
+			12852 [TODO] [Urgent Order] Iole's Request
+			12853 [TODO] Cebes' Tempting Proposal
+			12854 [TODO] Objective Based Base Objectives
+			12999 [TODO] Katalam
+			13550 [TODO] Smelling This Will Do Wonders
+			13551 [TODO] What Novun Doth Fear
+			13552 [TODO] It's a Delicacy in Kamar, I Swear
+			13553 [TODO] Zombocratic Oath
+			13554 [TODO] Academic Rivalry
+			13555 [TODO] Balaur Diplomacy
+			13556 [TODO] Take a Ride on the Goldrine Line
+			13557 [TODO] Crerunerk's Motivational Excercise
+			13558 [TODO] Keeping a Correct Count
+			13559 [TODO] Morale Needs Improvement
+			13560 [TODO] Scary Monsters, Nyerk!
+			13561 [TODO] Where Are We Going?
+			13562 [TODO] Mairinerk's Pendant
+			13563 [TODO] Trading Talent for Tools
+			13564 [TODO] Securing the Evidence
+			13565 [TODO] [Group] Expanding the Stope Area
+			13566 [TODO] Meeting the Deadline
+			13567 [TODO] Grankers!
+			20080 [SCRIPT] Kata-where?
+			20081 [SCRIPT] For the Dead
+			20082 [SCRIPT] Kahrun's Won't
+			20083 [SCRIPT] Not Bush nor Bramble...
+			20084 [SCRIPT] Not Desert nor Danger...
+			20085 [SCRIPT] Can Quiet the Truth
+			22500 [TODO] Nap Time is Over
+			22501 [TODO] A Varmint Free Paradise
+			22502 [TODO] Clean Up on Spire Aisle
+			22503 [TODO] These Archons Don't Have Claws...
+			22504 [TODO] Too Little Butter Over Too Much Bread
+			22505 [TODO] Scouting Out the Guardian Detachment
+			22506 [TODO] Dark Wings, Darker Tidings
+			22507 [TODO] Of Two Minds
+			22508 [TODO] Subterfuge
+			22509 [TODO] The Guys with Claws Did It! Wait...
+			22510 [TODO] On Fastvi's Secret Service
+			22511 [TODO] No Brainwashing Allowed
+			22512 [TODO] Scientific Method
+			22513 [TODO] Unlicensed Dentistry
+			22514 [TODO] Snufflers Give Her the Snuffles
+			22515 [TODO] Ate the Plates Too
+			22516 [TODO] Changing the Forecast
+			22517 [TODO] Stopping the Damage
+			22518 [TODO] A Mysterious Object
+			22519 [TODO] Unneeded Distractions
+			22520 [TODO] An Important Guest
+			22521 [TODO] Covering Up a Mistake
+			22522 [TODO] Scouting Out the Sentry Post
+			22523 [TODO] Reason For the Treason
+			22524 [TODO] Unexpected Information
+			22525 [TODO] Clean Up on Ide Seven
+			22526 [TODO] Unfinished Exterminations
+			22527 [TODO] What's in the Box?
+			22528 [TODO] A Companion with No Way to Return
+			22529 [TODO] Daeva Scabs
+			22530 [TODO] I Smell a Class Action Lawsuit
+			22531 [TODO] The Rava of Wrath
+			22532 [TODO] Tayga Meat Fit for Vegetarians
+			22533 [TODO] Beware Shugos Giving Gifts
+			22534 [TODO] No, No, Noborinerk!
+			22535 [TODO] Remember the Fallen
+			22536 [TODO] Force of Nature
+			22537 [TODO] Forgotten Defenders
+			22538 [TODO] That's No Ordinary Rotron
+			22539 [TODO] Get Off My Road
+			22540 [TODO] No Logging Area
+			22541 [TODO] Knocking the Wind Out of Them
+			22542 [TODO] Warm Lunch Delivery
+			22543 [TODO] Tasty Lunch Delivery
+			22544 [TODO] An Obstacle in the Logging Area
+			22545 [TODO] A Part Needed for Repair
+			22546 [TODO] Master of the Land
+			22547 [TODO] Fetching Wood
+			22548 [TODO] What Must Never Be Seen
+			22549 [TODO] Eliminating the Rival
+			22550 [TODO] Cleaning Up the Crash Site
+			22551 [TODO] An Honorable Rest
+			22552 [TODO] Investigating the Spirits' World
+			22553 [TODO] The Cause of the Crash
+			22554 [TODO] Unquiet Influence
+			22555 [TODO] Research Assistance
+			22556 [TODO] Environmental Constraints
+			22557 [TODO] Hostile Collegiality
+			22558 [TODO] Care to See My Etchings?
+			22559 [TODO] [Group] Spectral Interviews
+			22560 [TODO] Laying the Trap
+			22561 [TODO] Securing the Gateway
+			22562 [TODO] But It Was A Magic Rock
+			22563 [TODO] Preparing for the Worst
+			22564 [TODO] The Novun Identity, Part 1
+			22565 [TODO] The Novun Identity, Part 2
+			22566 [TODO] Hildanon's Legacy
+			22567 [TODO] [Coin] Fleecing Stellman
+			22568 [TODO] [Coin] C-R-Y-N-A-C-S, Crynacs
+			22569 [TODO] [Coin] Daeva-Eating Taygas
+			22570 [TODO] [Coin] Time to be Heartless
+			22571 [TODO] [Coin] Griffos, Terrors of the Night
+			22800 [TODO] Lights Out
+			22801 [TODO] The Lucky Charm
+			22802 [TODO] Birds of Prey
+			22803 [TODO] The Great Supply Robbery
+			22804 [TODO] [Weekly] Scouting Their Graves
+			22805 [TODO] An Unusable Trap
+			22806 [TODO] Securing the Retreat
+			22807 [TODO] Improving Fortifications
+			22808 [TODO] [Weekly] Eliminate Spiralroot Scouts
+			22809 [TODO] Lumbering Lumber
+			22810 [TODO] Rooting Out An Answer
+			22811 [TODO] Spores For Snores
+			22812 [TODO] Grating Cries
+			22813 [TODO] [Daily] The Fighting Foothold
+			22814 [TODO] [Daily] Adversarial Advancers
+			22815 [TODO] Crynacs Damage His Calm
+			22816 [TODO] Turtles in a Half Carapace
+			22817 [TODO] They Come in Threes
+			22818 [TODO] [Daily] Bloody Them Senseless
+			22819 [TODO] [Daily] Bleed Them Dry
+			22820 [TODO] The Missing Messenger
+			22821 [TODO] The Lost Gift
+			22822 [TODO] A Sip of Something Cool
+			22823 [TODO] And Another Thing
+			22824 [TODO] [Daily] We Fight in the Shade
+			22825 [TODO] [Daily] Bury Them Standing
+			22826 [TODO] Beware of Intrusion
+			22827 [TODO] Expansion Work
+			22828 [TODO] [Daily] Scuttle the Irigani Scouts
+			22829 [TODO] [Daily] Irigani Elimination Orders
+			22830 [TODO] Preventing the Plague's Spread
+			22831 [TODO] We Need Reinforcements
+			22832 [TODO] Slippery Little Suckers
+			22833 [TODO] Unredeemable
+			22834 [TODO] [Daily] Hungry and Harried
+			22835 [TODO] [Daily] Harried and Hungry
+			22836 [TODO] [Group] Opening Blows
+			22837 [TODO] [Group] Ending the Legend
+			22838 [TODO] [Daily] Sweeping Away the Elyos
+			22839 [TODO] [Daily] Sweeping Away the Balaur
+			22840 [TODO] A Bit of Ide Reading
+			22841 [TODO] Unfortunate Habitat
+			22842 [TODO] [Daily] Past Tense Pass Scouts
+			22843 [TODO] [Daily] Balaur Belated
+			22844 [TODO] [Urgent Order] Watching the Watch
+			22845 [TODO] [Urgent Order] Batan's Request
+			22846 [TODO] [Urgent Order] Cavloft's Request
+			22847 [TODO] [Urgent Order] Dagstyrr's Request
+			22848 [TODO] [Urgent Order] Eyja's Request
+			22849 [TODO] [Urgent Order] Fjotra's Request
+			22850 [TODO] [Urgent Order] Galmann's Request
+			22851 [TODO] [Urgent Order] Put Them On Ice
+			22852 [TODO] [Urgent Order] Ingi's Request
+			22853 [TODO] The Ceramium Man
+			22854 [TODO] Keep What You Kill
+			80473 [TODO] [Growth/Weekly] Lessons in Time
+			80474 [TODO] [Growth/Weekly] Save Time and Effort
+			99002 [TODO] [Test] Inventory Item Check
+		[END] SUMMARY
+	-->
+	<!-- REPORTING QUESTS -->
+	<report_to id="12508" start_npc_ids="801021" end_npc_ids="801028"/>
+	<report_to id="12510" start_npc_ids="801018" end_npc_ids="801012"/>
+	<!-- COLLECTING QUESTS -->
+	<item_collecting id="12512" start_npc_ids="800535" action_item_ids="701750"/>
+	<item_collecting id="12513" start_npc_ids="800535"/>
+	<item_collecting id="12515" start_npc_ids="801320"/>
+	<item_collecting id="12521" start_npc_ids="801024"/>
+	<item_collecting id="12523" start_npc_ids="801010"/>
+	<!-- HUNTING QUESTS -->
+	<monster_hunt id="12501" start_npc_ids="801026" end_npc_ids="801021">
+		<monster var="0" npc_ids="230142 230143" end_var="12"/>
+	</monster_hunt>
+	<monster_hunt id="12502" start_npc_ids="801027" end_npc_ids="801027">
+		<monster var="0" npc_ids="701734" end_var="5"/>
+	</monster_hunt>
+	<monster_hunt id="12503" start_npc_ids="801027" end_npc_ids="801027">
+		<monster var="0" npc_ids="231483" end_var="2"/>
+	</monster_hunt>
+	<monster_hunt id="12507" start_npc_ids="800532" end_npc_ids="800533">
+		<monster var="0" npc_ids="232908 232909 232910" end_var="6"/>
+	</monster_hunt>
+	<monster_hunt id="12511" start_npc_ids="801012" end_npc_ids="801012">
+		<monster var="0" npc_ids="230209 230210 230211 230212 230213" end_var="12"/>
+		<monster var="1" npc_ids="" end_var="1"/>
+	</monster_hunt>
+	<monster_hunt id="12514" start_npc_ids="801013" end_npc_ids="800538">
+		<monster var="0" npc_ids="230225" end_var="8"/>
+	</monster_hunt>
+	<monster_hunt id="12516" start_npc_ids="801320" end_npc_ids="801320">
+		<monster var="0" npc_ids="230231" end_var="5"/>
+	</monster_hunt>
+	<monster_hunt id="12517" start_npc_ids="801320" end_npc_ids="801320">
+		<monster var="0" npc_ids="230226" end_var="15"/>
+	</monster_hunt>
+	<monster_hunt id="12518" start_npc_ids="801015" end_npc_ids="801015">
+		<monster var="0" npc_ids="701736" end_var="8"/>
+	</monster_hunt>
+	<monster_hunt id="12519" start_npc_ids="801015" end_npc_ids="801015">
+		<monster var="0" npc_ids="230233" end_var="5"/>
+	</monster_hunt>
+	<monster_hunt id="12520" start_npc_ids="801024" end_npc_ids="801024">
+		<monster var="0" npc_ids="230236" end_var="6"/>
+		<monster var="1" npc_ids="230237" end_var="8"/>
+	</monster_hunt>
+	<monster_hunt id="12526" start_npc_ids="801023" end_npc_ids="801023">
+		<monster var="0" npc_ids="230239" end_var="6"/>
+	</monster_hunt>
+	<monster_hunt id="12528" start_npc_ids="801023" end_npc_ids="801023">
+		<monster var="0" npc_ids="230407" end_var="6"/>
+		<monster var="0" npc_ids="230408" end_var="6"/>
+	</monster_hunt>
+</quest_scripts>

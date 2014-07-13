@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quest_scripts>
+	<!-- 
+		[BEGIN] SUMMARY
+			10090 [TODO] Idgel If You Ask Me
+			10091 [TODO] Even Balaur Get The Blues
+			10092 [TODO] Oh, Right. Idgel.
+			10093 [TODO] The Kaza Identity
+			13000 [TODO] Raiding the Raiders
+			13001 [TODO] Shugo Support
+			13002 [TODO] When You Comng Back, Daeva?
+			13003 [TODO] A Ridiculous Task
+			13004 [TODO] The Pantager Prodigal
+			13005 [TODO] Forgotten Byway Blues
+			13006 [TODO] The Circle of Kinah
+			13007 [TODO] Kaberinrinerk's Cloak
+			13008 [TODO] Shugos Must Hear a Coin a Mile Away
+			13009 [TODO] Can I Have Indiananerk's Autograph?
+			13010 [TODO] Where Beritra's Bane Doth Rule
+			13011 [TODO] Drakes On A Plain
+			13012 [TODO] Silencing The Past
+			13013 [TODO] A Representative Sampling
+			13014 [TODO] Meet the Ophidan
+			13015 [TODO] No Altar For You
+			13016 [TODO] The Shugo Connection
+			13017 [TODO] Death of a Cultsman
+			13018 [TODO] Every One an Ide Balloon
+			13019 [TODO] Onward to the Onslaught
+			13020 [TODO] When Ide Goes Bad
+			13021 [TODO] Getting to the Bottom of It
+			13022 [TODO] What Color Was It Again?
+			13023 [TODO] Kill All the Evidence
+			13024 [TODO] Follow the Blue Ide Road
+			13025 [TODO] [Group] The Enemy of My Enemy Is My Friend
+			13026 [TODO] What? Betrayal?
+			13027 [TODO] Komad Onslaught
+			13028 [TODO] Assist the Onslaught
+			13029 [TODO] Paranoid Onslaught
+			13030 [TODO] Combat Mechanic
+			13031 [TODO] Idgel Recovery
+			13032 [TODO] Fury of the Ametgolems
+			13033 [TODO] There's Something About Mauri
+			13034 [TODO] Impediments to Progress
+			13035 [TODO] Cruel to be Kind
+			13036 [TODO] No Snakes Around Here
+			13037 [TODO] Questionable Lending Practices
+			13038 [TODO] Golderine Free City, Ho!
+			13039 [TODO] Mnesino's Order
+			13040 [TODO] The Threat From Within
+			13041 [TODO] Mnesino's Method
+			13042 [TODO] An Appropriate Sacrifice
+			13043 [TODO] Fit for the Slaughter
+			13044 [TODO] Whose Mission is it Anyway?
+			13045 [TODO] Sewer Systems are Key
+			13046 [TODO] A Touch of Skurv
+			13047 [TODO] Showing 'Em How It's Done
+			13048 [TODO] The Chief Priest's Daughter
+			13049 [TODO] Pride Cometh Before a Fall
+			13050 [TODO] Charging the Cavalry
+			13051 [TODO] Keyros Calls for Aid
+			13052 [TODO] Go Forth and Promote Me
+			13053 [TODO] [Group] Just Borrowing Them
+			13054 [TODO] My Report is Better
+			13055 [TODO] [Group] More like Pashid Slayed Capt.
+			13056 [TODO] Don't Rock the Party
+			13057 [TODO] It's Called War Profiteering, My Dear
+			13058 [TODO] Hello My Daeva
+			13059 [TODO] Bzzzz, Bzzzzt!
+			13060 [TODO] Strange Water
+			13061 [TODO] Oh, What a Relief You've Been!
+			13062 [TODO] Not My Department
+			13063 [TODO] Reports Are Overrated
+			13064 [TODO] Employee Appreciation Day
+			13065 [TODO] [Coin] Twilight of the Pashid Raiders
+			13066 [TODO] [Coin] The Lakuri Hunt
+			13067 [TODO] [Coin] Drop a Few More
+			13068 [TODO] [Coin] Seriously, All the Evidence
+			13069 [TODO] [Coin] One Man's Burden of Proof
+			13070 [TODO] [Coin] BZZZZ, BZZZZT!
+			13300 [TODO] Crazed Contaminants Campout
+			13301 [TODO] [Group] Undying Vengeance
+			13302 [TODO] Gnawing Gnarls
+			13303 [TODO] [Weekly] Advancing Asmodians
+			13304 [TODO] [Weekly] Let Me Be Desolate
+			13306 [TODO] Military Intel Ain't What It Used to Be
+			13307 [TODO] [Group] Communication 101: No Dying
+			13308 [TODO] Grunt Work
+			13309 [TODO] [Daily] Die, Archon Scum, Die!
+			13310 [TODO] [Daily] Die, Balaur Scum, Die!
+			13311 [TODO] Rasputinerk's Madness
+			13312 [TODO] Little Big Book of Lies
+			13313 [TODO] The Seiren's Cries
+			13314 [TODO] [Daily] Sending a Message
+			13315 [TODO] [Daily] Another Day, Another Message
+			13316 [TODO] Defend This
+			13317 [TODO] The Idium Connection
+			13318 [TODO] Rumble in the Ruins
+			13319 [TODO] [Daily] Those Sneaky Asmodians
+			13320 [TODO] [Daily] Those Sneaky Balaur
+			13321 [TODO] [Group] Alliance Breaker
+			13322 [TODO] Sanctuary No More
+			13323 [TODO] Camouflage Carnage
+			13324 [TODO] [Weekly] The Campsite Shuffle
+			13325 [TODO] [Weekly] Not Just Asmodians
+			13326 [TODO] A Little Tall for a Pashid Trooper?
+			13327 [TODO] [Group] How Did He Know?
+			13328 [TODO] Destroying Evidence, Er... Research
+			13329 [TODO] [Daily] And Don't Come Back
+			13330 [TODO] [Daily] Seriously, Don't Come Back
+			13331 [TODO] Sheban Basin Blues
+			13332 [TODO] Punch That Brax!
+			13333 [TODO] [Daily] Planning Ahead
+			13334 [TODO] [Daily] Defend the Silona Base
+			13335 [TODO] Supplier Denier
+			13336 [TODO] They Must Have Looted Them
+			13337 [TODO] [Group] It's Just An Army
+			13338 [TODO] [Daily] It's Always The Asmodians
+			13339 [TODO] [Daily] If Not, It's The Balaur
+			13340 [TODO] Rewriting the Present
+			13341 [TODO] [Group] Blades and Scroll
+			13342 [TODO] Slaughteroutpost 5
+			13343 [TODO] [Daily] Everybody Knows Your Name
+			13344 [TODO] [Daily] Balaur Blues
+			13345 [TODO] [Group] Tinker, Tailor...
+			13346 [TODO] [Group] ... Soldier, Spy
+			13347 [TODO] Increasing Disregard
+			13348 [TODO] [Daily] Morale De-Booster
+			13349 [TODO] [Daily] Naps are Bad
+			13350 [TODO] [Urgent Order] They'll Run From You
+			13351 [TODO] [Urgent Order] Stifas's Request
+			13352 [TODO] [Urgent Order] Ceron's Request
+			13353 [TODO] [Urgent Order] Periander Calls For Aid
+			13354 [TODO] [Urgent Order] Unlucky Thirteen
+			13355 [TODO] [Urgent Order] Kalennos's Request
+			13356 [TODO] [Urgent Order] Homerus's Request
+			13357 [TODO] [Urgent Order] Our Defense Zone Now
+			13358 [TODO] [Urgent Order] Faster, Daeva! Kill! Kill!
+			13359 [TODO] [Urgent Order] Pormeo's Request
+			13360 [TODO] Mighty Morphin' Ceramium Medals
+			13361 [TODO] But It Would Be Quality Sludge
+			13362 [TODO] Useful Information from Ararinerk
+			16950 [TODO] Evidence of the Betrayal
+			16951 [TODO] Attacking the Steel Rose
+			16952 [TODO] Melody Magic Crystal
+			16953 [TODO] The Bitter Price of Betrayal
+			16954 [TODO] [Group] The Diabolical Bard
+			16955 [TODO] [Group] The Wingless Rose
+			20090 [TODO] Ide Take Freedom
+			20091 [TODO] Mine Enemies, Thine Enemies
+			20092 [TODO] The Nicest Daeva in Danaria
+			20093 [TODO] FIAWOL: Falsity Is A Way Of Life
+			23000 [TODO] Rocks in the Way
+			23001 [TODO] Ancient Building Techniques
+			23002 [TODO] Cold Shugos Cannot Work
+			23003 [TODO] Taygas in the Night
+			23004 [TODO] Trust a Shulack?
+			23005 [TODO] No Simple Tasks
+			23006 [TODO] Strike Fast And Hard!
+			23007 [TODO] Snowfield Work Stoppage
+			23008 [TODO] A Fresh Perspective
+			23009 [TODO] A Fresh Cut
+			23010 [TODO] A Fresh Posting
+			23011 [TODO] Stealing Intelligence
+			23012 [TODO] Decommissioning Novun
+			23013 [TODO] Desperate Measures
+			23014 [TODO] Olvir's Experiment
+			23015 [TODO] Securing the Experiment Area
+			23016 [TODO] The Delayed Report
+			23017 [TODO] Someone Will Sort All This Out
+			23018 [TODO] Unintended Inattention
+			23019 [TODO] They Have to Ghost... err, Go!
+			23020 [TODO] Contamination Scene Investigation
+			23021 [TODO] Not A Tourist Destination
+			23022 [TODO] [Group] Not So Undying
+			23023 [TODO] Enviromentalist Work
+			23024 [TODO] Done, Done, And Onto The Next Job
+			23025 [TODO] [Group] Vasharti Legion's Vengeance
+			23026 [TODO] Lessons Learned
+			23027 [TODO] Showing Up Stellman
+			23028 [TODO] The Hand Off
+			23029 [TODO] This Isn't What You Think
+			23030 [TODO] Unusual Observations
+			23031 [TODO] Making Idgel Safe
+			23032 [TODO] Breaking Rocks
+			23033 [TODO] Badgering the Lakuri Leader
+			23034 [TODO] Bloody the Badgers
+			23035 [TODO] Jars of Clay
+			23036 [TODO] Dragonbound Blind
+			23037 [TODO] This One's No Aturinerk
+			23038 [TODO] To the Land of the Shugos
+			23039 [TODO] Sure to Get the Message
+			23040 [TODO] Too Busy to Work
+			23041 [TODO] Avoiding a Late Fee
+			23042 [TODO] The Shugo Guru
+			23043 [TODO] A Leaderless Flock
+			23044 [TODO] We're Stealin' It Back
+			23045 [TODO] The Waterworm Plague
+			23046 [TODO] Squashing the Squatters
+			23047 [TODO] The Angry Commander
+			23048 [TODO] Headstrong and Lost
+			23049 [TODO] For My Family, All
+			23050 [TODO] All for One...
+			23051 [TODO] ...One for All!
+			23052 [TODO] Snout Counting
+			23053 [TODO] "Spying" is my Business...
+			23054 [TODO] ...And Business is Good
+			23055 [TODO] [Group] Breaking the Blade
+			23056 [TODO] The Stone Legion
+			23057 [TODO] Maximizing Profit Gain
+			23058 [TODO] Aiding the Enemy
+			23059 [TODO] Disease Prevention
+			23060 [TODO] Plausible Deniablity
+			23061 [TODO] Move Along, Little Doggy
+			23062 [TODO] A Shugo's Loyalty
+			23063 [TODO] Hadrianerk's Wall
+			23064 [TODO] Goldrine's Personal Recognition
+			23065 [TODO] [Coin] Taking Out the Drakan Trash
+			23066 [TODO] [Coin] Badger, Badger, Badger
+			23067 [TODO] [Coin] Tayga by the Tail
+			23068 [TODO] [Coin] Disposing of the Earth Spirits
+			23069 [TODO] [Coin] Culling Curs
+			23070 [TODO] [Coin] Help Un-Wanted
+			23300 [TODO] [Group] Search for Secrets
+			23301 [TODO] Cleansing the Filth
+			23302 [TODO] A Failure of Intelligence Units
+			23303 [TODO] [Daily] Gouging the Eyes
+			23304 [TODO] [Daily] Beat Back the Balaur
+			23306 [TODO] Smashing the Assembly Area
+			23307 [TODO] [Group] Stop That Courier!
+			23308 [TODO] Clean Up at Base 40
+			23309 [TODO] [Daily] Eliminate the Icethorn Scouts
+			23310 [TODO] [Daily] Eliminate the Icethorn Advance Unit
+			23311 [TODO] Against the Ophidan
+			23312 [TODO] The Immortal Rasputinerk?
+			23313 [TODO] Silence the Seirens
+			23314 [TODO] [Daily] No Spying Allowed
+			23315 [TODO] [Daily] No Plotting Allowed
+			23316 [TODO] The Keeper of the Hideout
+			23317 [TODO] One Small Clue
+			23318 [TODO] Heresy. HERESY!
+			23319 [TODO] [Daily] Eliminating the Archways Scouts
+			23320 [TODO] [Daily] Eliminating the Advance Unit
+			23321 [TODO] Ominous Negotiations
+			23322 [TODO] Unwise Alliance
+			23323 [TODO] Wildlife Problems
+			23324 [TODO] [Daily] Morale Crusher
+			23325 [TODO] [Daily] Ambition Crusher
+			23326 [TODO] Pleasure in Pashid Pain
+			23327 [TODO] [Group] Things Seem Off
+			23328 [TODO] Cleaning Up the Sky
+			23329 [TODO] [Daily] Lazy Tactics, Easy Victory
+			23330 [TODO] [Daily] Getting the Balaur's Attention
+			23331 [TODO] Counterintelligence
+			23332 [TODO] Hungry Hungry Braxes
+			23333 [TODO] [Daily] Breaking the Silona Elyos
+			23334 [TODO] [Daily] Breaking the Silona Balaur
+			23335 [TODO] Harry Their Rear
+			23336 [TODO] Strange Steel
+			23337 [TODO] [Group] Ring around the Dragons
+			23338 [TODO] [Daily] Surprise, Surprise
+			23339 [TODO] [Daily] Deep in Enemy Land
+			23340 [TODO] [Group] A Thorn in Pashid's Side
+			23341 [TODO] [Group] Steal the Operations Plan
+			23342 [TODO] Clean Up the Surrounding Area
+			23343 [TODO] [Daily] Eliminate the Vigils Scouts
+			23344 [TODO] [Daily] Eliminate the Vigils Advance Unit
+			23345 [TODO] [Group] Murdak Attack
+			23346 [TODO] [Group] Something Hinky This Way Comes
+			23347 [TODO] Cleaner of the Plains
+			23348 [TODO] [Daily] Eliminate the Meadow Scouts
+			23349 [TODO] [Daily] Eliminate the Meadow Advance Unit
+			23350 [TODO] [Urgent Order] Hervo's Request
+			23351 [TODO] [Urgent Order] Tobald's Request
+			23352 [TODO] [Urgent Order] Preydis' Request
+			23353 [TODO] [Urgent Order] Torpin's Request
+			23354 [TODO] [Urgent Order] Olaf's Request
+			23355 [TODO] [Urgent Order] Ube's Request
+			23356 [TODO] [Urgent Order] Igrit’s Request
+			23357 [TODO] [Urgent Order] Helga's Request
+			23358 [TODO] [Urgent Order] Rorik's Request
+			23359 [TODO] [Urgent Order] Rolf's Request
+			23360 [TODO] A Learning Experience
+			23361 [TODO] Dentirunerk's Enticing Proposal
+			23362 [TODO] A Shiny New Pair
+			23550 [TODO] The Fixer
+			23551 [TODO] Home at the End of the World
+			23552 [TODO] Too Many Reminders
+			23553 [TODO] What's a Train Robber Steal?
+			23554 [TODO] Last Train Home
+			23555 [TODO] Permission to Build
+			23556 [TODO] Waste Not, Nyerk Not!
+			23557 [TODO]  Shifty Shulack On Short Shifts
+			23558 [TODO] What's in My Bucket?
+			23559 [TODO] Shulack's Trash, Shugo Treasure
+			23560 [TODO] Carbon Collection
+			23561 [TODO] Whose Rail Line Is It Anyway?
+			23562 [TODO] Bureaucracy Inaction
+			23563 [TODO] The Disappearing Workers
+			23564 [TODO] A Secret Investor
+			23565 [TODO] When You are Suffering and Sad
+			23566 [TODO] Something Even Scarier than Monsters
+			23567 [TODO] Mati's Revenge
+			26950 [TODO] The Black List
+			26951 [TODO] Supply Chain
+			26952 [TODO] Crystaline Siren Song
+			26953 [TODO] The Price of Betrayal
+			26954 [TODO] [Group] Dread Pirate Rumakiki
+			26955 [TODO] [Group] Arms Reclamation
+		[END] SUMMARY
+	-->
+</quest_scripts>

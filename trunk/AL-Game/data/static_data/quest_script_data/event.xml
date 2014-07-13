@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quest_scripts>
+	<!--
+		[BEGIN] SUMMARY
+			50031 [TODO] [Event/Daily] Love and Slaughter	
+			51031 [TODO] [Event/Daily] Love is Pain	
+			80275 [TODO] [Event] Empires Past	
+			80279 [TODO] [Event] Spirited Thanks	
+			80282 [TODO] [Event] Secret of the Map Piece	
+			80284 [TODO] [Event] Trouble Brewing	
+			80285 [TODO] [Event] Fermenting Trouble	
+			80324 [XML] [Event/Daily] Prescription for Medicine
+			80325 [XML] [Event/Daily] Prescription for Psychiatric Medicine
+			80326 [XML] [Event/Daily] Prescription for Medicine
+			80327 [XML] [Event/Daily] Prescription for Psychiatric Medicine
+			80328 [TODO] [Event/Daily] Rolling on the Loot	
+			80329 [TODO] [Event/Daily] Just Roll With It	
+			80330 [TODO] [Event/Daily] Wanding More Power	
+			80331 [TODO] [Event/Daily] I've Got the Power!	
+			80344 [TODO] [Event] Alchemist's Gift	
+			80351 [TODO] [Event] The First Hit Is Free	
+			80352 [TODO] [Event] Ice Hot!	
+			80353 [TODO] [Event] Closing This Party Down	
+			80354 [TODO] [Event] Closing This Party Down	
+			80355 [TODO] [Event] Closing This Party Down	
+			80356 [TODO] [Event] Closing Time	
+			80357 [TODO] [Event] Don't You Want To Hang Out?	
+			80358 [TODO] [Event] Icevest! Or, Invest in Ice	
+			80359 [TODO] [Event] Trust the Shugo Broker	
+			80360 [TODO] [Event] The First Hit Is Free	
+			80361 [TODO] [Event] Ice Hot!	
+			80362 [TODO] [Event] Closing This Party Down	
+			80363 [TODO] [Event] Closing This Party Down	
+			80364 [TODO] [Event] Closing This Party Down	
+			80365 [TODO] [Event] Closing Time	
+			80366 [TODO] [Event] Don't You Want To Hang Out?	
+			80367 [TODO] [Event] Icevest! Or, Invest in Ice	
+			80368 [TODO] [Event] Trust the Shugo Broker	
+			80369 [TODO] [Growth] Conversation with Protector Siz	
+			80370 [TODO] [Growth] Conversation with Protector Jacques	
+			80371 [TODO] [Growth] Conversation with Protector Paulcoes	
+			80372 [TODO] [Growth] Conversation with Protector Kentro	
+			80373 [TODO] [Growth] Converse with Bree	
+			80374 [TODO] [Growth] Converse with Mione	
+			80375 [TODO] [Growth] Converse with Nico	
+			80376 [TODO] [Growth] Converse with Kentro	
+			80377 [TODO] [Growth] Converse with Mosswing	
+			80378 [TODO] [Growth] Helping Eddval	
+			80379 [TODO] [Growth] Helping Idmund	
+			80380 [TODO] [Growth] Helping Ketil	
+			80381 [TODO] [Growth] Helping Melnir	
+			80382 [TODO] [Growth] Assisting Kolfrosta	
+			80383 [TODO] [Growth] Assisting Geirrid	
+			80384 [TODO] [Growth] Assisting Vaetild	
+			80385 [TODO] [Growth] Assisting Melnir	
+			80386 [TODO] [Growth] Assisting Mirian	
+			80387 [TODO] [Growth] Kralltumagna Balaur Blues	
+			80388 [TODO] [Growth] Kralltumagna Kill Zone	
+			80389 [TODO] [Growth] No No Nagarant	
+			80390 [TODO] [Growth] Drafala's Fall	
+			80391 [TODO] [Growth] Lahulahu Past Laugh	
+			80392 [TODO] [Growth] The Pupukin Problem	
+			80393 [TODO] [Growth] Shulack Sad Sack	
+			80394 [TODO] [Growth] Drakan Back In Style	
+			80395 [TODO] [Growth] Indratu Fortress Blues	
+			80396 [TODO] [Growth] Enmity at the Gates	
+			80397 [TODO] [Growth] Death to Indratu!	
+			80398 [TODO] [Growth] The Akbar Trap	
+			80399 [TODO] [Growth] Cruelty to Kind Saraswati	
+			80400 [TODO] [Growth] Lakshmi Tearful Goodbye	
+			80401 [TODO] [Growth] Death to Nimbarka!	
+			80402 [TODO] [Growth] Stonecold Killer	
+			80403 [TODO] [Growth] Blasting in Blasted Lands	
+			80404 [TODO] [Growth] Zombie Eggs	
+			80405 [TODO] [Growth] Bring Bree Proof	
+			80406 [TODO] [Growth] It Takes a Village Out	
+			80407 [TODO] [Growth] To the Bat Cave	
+			80408 [TODO] [Growth] A Many Peded Thing	
+			80409 [TODO] [Growth] Spider Down	
+			80410 [TODO] [Growth] A Stone's Throw	
+			80411 [TODO] [Growth] The Things We Leave Behind	
+			80412 [TODO] [Growth] A Statuesque Monster	
+			80413 [TODO] [Growth] Unstable Experiments	
+			80414 [TODO] [Growth] Instruction in Death	
+			80415 [TODO] [Growth] Kindness Kills	
+			80416 [TODO] [Growth] Beauty's Objective	
+			80417 [TODO] [Growth] Commander Conquered	
+			80418 [TODO] [Growth] Fraught Futures	
+			80419 [TODO] [Growth] Spiritual Growths	
+			80420 [TODO] [Growth] The Future of Fungie	
+			80421 [TODO] [Growth] Mind Over	
+			80422 [TODO] [Growth] In the Lair of the Drake	
+			80423 [TODO] [Growth] Cleansing the Lair	
+			80424 [TODO] [Growth] Bloody Balaur Rags	
+			80425 [TODO] [Growth] Slaying the General	
+			80426 [TODO] [Growth] Shulack, I Need More Power!	
+			80427 [TODO] [Growth] Unforeseen Problems	
+			80428 [TODO] [Growth] Control of the Ship	
+			80429 [TODO] [Growth] Research Grant Canceled	
+			80430 [TODO] [Growth] Lab Shut Down	
+			80431 [TODO] [Growth] Hand Over the Keys	
+			80432 [TODO] [Growth] Extreme Excommunication	
+			80433 [TODO] [Growth] School's Out for Afrane	
+			80434 [TODO] [Growth] Be Kind, Re-Grind	
+			80435 [TODO] [Growth] Let the Beauty Out	
+			80436 [TODO] [Growth] Full Battle Disarray	
+			80437 [TODO] [Growth] Pest Control	
+			80438 [TODO] [Growth] The Sap's the Thing	
+			80439 [TODO] [Growth] From the Grave	
+			80440 [TODO] [Growth] The Wailing Dead	
+			80441 [TODO] [Growth] Hostile Waters	
+			80442 [TODO] [Growth] Lobnite's Last Night	
+			80443 [TODO] [Growth] Battling Brohum	
+			80444 [TODO] [Growth] Vampires of Nahor	
+			80445 [TODO] [Growth] Making a Path	
+			80446 [TODO] [Growth] Palace Problems	
+			80447 [TODO] [Growth] Crush the Cellatu	
+			80448 [TODO] [Growth] Lords and Suspicions	
+			80449 [TODO] [Growth] End of Lesson	
+			80450 [TODO] [Growth] Cruel to Kind	
+			80451 [TODO] [Growth] A Beautiful End	
+			80452 [TODO] [Growth] Nimbarka's Last Battle	
+			80453 [TODO] [Growth] Future Strike	
+			80454 [TODO] [Growth] Dark Tidings	
+			80455 [TODO] [Growth] Doom Fungie	
+			80456 [TODO] [Growth] Infernal Machines	
+			80475 [TODO] [Event] A Roaring Bonfire	
+			80476 [TODO] [Event] Drowning Is not an Option	
+			80477 [TODO] [Event] Fire, Fire Burning Bright	
+			80478 [TODO] [Event] Splish, Splash	
+		[END] SUMMARY
+	-->
+	<!-- REPORTING QUESTS -->
+	<report_to id="80324" start_npc_ids="831434" end_npc_ids="831447"/>
+	<report_to id="80325" start_npc_ids="831433" end_npc_ids="831447"/>
+	<report_to id="80326" start_npc_ids="831440" end_npc_ids="831448"/>
+	<report_to id="80327" start_npc_ids="831439" end_npc_ids="831448"/>
+	<!-- COLLECTING QUESTS -->
+	<!-- HUNTING QUESTS -->
+	<!-- ITEM ORDERS QUESTS -->
+</quest_scripts>

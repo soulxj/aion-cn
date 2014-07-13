@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quest_scripts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quest_script_data.xsd">
+	<!--
+		[BEGIN] SUMMARY
+			18000 [TODO] Lizard Go Down the Hole
+			18001 [TODO] Idgel Recovery
+			18002 [TODO] It's not Plagiarism If It's a War
+			18003 [TODO] With Great Power Comes Great Idiocy
+			28000 [TODO] What Lies Beneath
+			28001 [TODO] Fight for Fragments
+			28002 [TODO] Prior Research
+			28003 [TODO] Ending Nautius' Rampage
+		[END] SUMMARY
+	-->
+	<!-- REPORTING QUESTS -->
+	<!-- COLLECTING QUESTS -->
+	<!-- HUNTING QUESTS -->
+	<!-- ITEM ORDERS QUESTS -->
+</quest_scripts>

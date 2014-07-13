@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quest_scripts>
+	<!--
+		[BEGIN] SUMMARY
+			13500 [TODO] [Achievement] Examine the Katalam Base
+			13509 [TODO] [Hero] Achievements in Katalam
+			13510 [TODO] [Hero] Conquering Katalam
+			13511 [TODO] [Hero/Daily/Group] First Accomplishment
+			13512 [TODO] [Hero/Daily/Group] Second Accomplishment
+			13513 [TODO] [Hero/Daily/Group] Third Accomplishment
+			13514 [TODO] [Hero/Daily/Group] Fourth Accomplishment
+			13515 [TODO] [Hero/Alliance] Pashid's Claw
+			13516 [TODO] [Hero/Group] Genral Disarray
+			13517 [TODO] [Hero/Group] An Officer and Asmodian
+			13518 [TODO] [Hero/Alliance] Assasination Attempts
+			13519 [TODO] [High] The Darker Means of War
+			13520 [TODO] [Highest] Tarbosch Must Die, Part I
+			13521 [TODO] [Highest] Tarbosch Must Die, Part II
+			13522 [TODO] [Highest] Tarbosch Must Die, Part III
+			13523 [TODO] [Hero] Complete the Danuar Mysticarium
+			13524 [TODO] [Hero/Group] Complete the Idgel Research Center
+			13525 [TODO] [Hero/Group] Complete the Void Cube
+			13526 [TODO] [Hero] Ruler of Katalam
+			13527 [TODO] [Hero/Group] Reliving Old Habits
+			13528 [TODO] [Hero/Group] Trust Among Friends
+			13529 [TODO] [Hero/Alliance] In Every Instance
+			13530 [TODO] [Hero] A Hero's Reward
+			13531 [TODO] [Hero/Daily/Group] Old Habits Die Hard
+			23500 [TODO] [Achievement] Inspect the Katalam Base
+			23509 [TODO] [Hero] Building Achievements in Katalam
+			23510 [TODO] [Hero] For Honor!
+			23511 [TODO] [Hero/Daily/Group] For the Cause!
+			23512 [TODO] [Hero/Daily/Group] For our People!
+			23513 [TODO] [Hero/Daily/Group] Again, our Victory!
+			23514 [TODO] [Hero/Daily/Group] Again, our Honor!
+			23515 [TODO] [Hero/Alliance] War Trophies
+			23516 [TODO] [Hero/Group] Elyos Heads
+			23517 [TODO] [Hero/Group] Chain of Command
+			23518 [TODO] [Hero/Alliance] Save the Fortresses!
+			23519 [TODO] [Hero] To Take a Fortress
+			23520 [TODO] [Hero] Tarbosch's Death 1
+			23521 [TODO] [Hero/Group] Tarbosch's Death 2
+			23522 [TODO] [Hero/Alliance] Tarbosch's Death 3
+			23523 [TODO] [Hero] Conquer the Danuar Mysticarium
+			23524 [TODO] [Hero/Group] Conquer the Idgel Research Center
+			23525 [TODO] [Hero/Group] Conquer the Void Cube
+			23526 [TODO] [Hero] Conqueror of Katalam
+			23527 [TODO] [Hero/Group] Old Spirits, Old Grudges
+			23528 [TODO] [Hero/Group] Scales and Secrets
+			23529 [TODO] [Hero/Force] Repurposing the Past
+			23530 [TODO] [Hero] Just Rewards
+			23531 [TODO] [Hero/Daily/Group] More Spirits, More Grudges
+		[END] SUMMARY
+	-->
+	<!-- REPORTING QUESTS -->
+	<!-- COLLECTING QUESTS -->
+	<!-- HUNTING QUESTS -->
+	<!-- ITEM ORDERS QUESTS -->
+</quest_scripts>

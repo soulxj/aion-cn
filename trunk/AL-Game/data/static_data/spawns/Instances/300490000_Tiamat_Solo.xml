@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spawns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<spawn_map map_id="300490000">
+		<!-- Blood-red Jewel -->
+		<spawn npc_id="730691">
+			<spot x="503.219757" y="516.651733" z="243.482681"/>
+		</spawn>
+		<!-- Fallen Surkana -->
+		<spawn npc_id="730700">
+			<spot x="439.996155" y="514.148071" z="424.444977"/>
+		</spawn>
+		<!-- Kahrun -->
+		<spawn npc_id="800431">
+			<spot x="502.125" y="510.26" z="417.404" h="116"/>
+		</spawn>
+		<!-- Kahrun -->
+		<spawn npc_id="800343">
+			<spot x="480.937" y="514.571" z="417.404"/>
+		</spawn>
+		<!-- Kaisinel -->
+		<spawn npc_id="800352">
+			<spot x="504.438" y="514.822" z="417.404" h="116"/>
+		</spawn>
+	</spawn_map>
+</spawns>

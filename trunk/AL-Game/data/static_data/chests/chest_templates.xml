@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chest_templates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="chest_templates.xsd">
+	<chest npcid="217100">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="217101">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="217102">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="217103">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="217104">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="217105">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<!-- Oriel -->
+	<chest npcid="218874">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="218876">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="218878">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="218880">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701519">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701520">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701521">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<!-- Pernon -->
+	<chest npcid="218882">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="218884">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="218886">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="218888">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<!-- INSTANCES -->
+	<!-- Lower Abyss -->
+	<chest npcid="700462">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700463">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700464">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700465">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700466">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700467">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700468">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700469">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700470">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700471">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701480">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701481">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701482">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701483">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701484">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701485">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701486">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701487">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701488">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701489">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<!-- Upper Abyss -->
+	<!-- Roah -->
+	<chest npcid="700472">
+		<keyitem id="1" itemid="185000036" quantity="1"/>
+	</chest>
+	<chest npcid="700473">
+		<keyitem id="1" itemid="185000037" quantity="1"/>
+	</chest>
+	<chest npcid="700474">
+		<keyitem id="1" itemid="185000038" quantity="1"/>
+	</chest>
+	<!-- Asteria -->
+	<chest npcid="700475">
+		<keyitem id="1" itemid="185000033" quantity="1"/>
+	</chest>
+	<chest npcid="700476">
+		<keyitem id="1" itemid="185000034" quantity="1"/>
+	</chest>
+	<chest npcid="700477">
+		<keyitem id="1" itemid="185000035" quantity="1"/>
+	</chest>
+	<!-- Kysis -->
+	<chest npcid="700542">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700560">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700541">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<!-- Krotan -->
+	<chest npcid="700540">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700559">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700539">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<!-- Miren -->
+	<chest npcid="700544">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700561">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700543">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<!-- Taloc's Hollow -->
+	<chest npcid="700742">
+		<keyitem id="1" itemid="185000082" quantity="1"/>
+	</chest>
+	<!-- Haramel -->
+	<chest npcid="700829">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700830">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700831">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700832">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700853">
+		<keyitem id="1" itemid="185000103" quantity="1"/>
+		<keyitem id="2" itemid="185000107" quantity="3"/>
+	</chest>
+	<!-- Theobomos Lab -->
+	<chest npcid="700826">
+		<keyitem id="1" itemid="185000015" quantity="1"/>
+	</chest>
+	<!-- Abyssal Splinter -->
+	<chest npcid="700934">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700860">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700935">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700936">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700937">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700938">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<!-- Esoterrace -->
+	<chest npcid="701023">
+		<keyitem id="1" itemid="185000110" quantity="1"/>
+	</chest>
+	<chest npcid="701022">
+		<keyitem id="1" itemid="185000111" quantity="1"/>
+	</chest>
+	<chest npcid="701027">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701016">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701025">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<!-- Crucible Challenge -->
+	<chest npcid="217758">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="217827">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="217828">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="217829">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="218571">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<!-- Tiamaranta Eye -->
+	<chest npcid="701388">
+		<keyitem id="1" itemid="185000114" quantity="1"/>
+	</chest>
+	<chest npcid="701389">
+		<keyitem id="1" itemid="185000115" quantity="1"/>
+	</chest>
+	<chest npcid="701390">
+		<keyitem id="1" itemid="185000116" quantity="1"/>
+	</chest>
+	<!-- Raksang -->
+	<chest npcid="701369">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701370">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701371">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701372">
+		<keyitem id="1" itemid="185000113" quantity="1"/>
+	</chest>
+	<!-- Steel Rake Cabin -->
+	<chest npcid="700553">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700554">
+		<keyitem id="1" itemid="185000076" quantity="1"/>
+	</chest>
+	<!-- Satra Treasure Hoard -->
+	<chest npcid="701460">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701461">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701462">
+		<keyitem id="1" itemid="185000118" quantity="1"/>
+	</chest>
+	<chest npcid="701463">
+		<keyitem id="1" itemid="185000119" quantity="1"/>
+	</chest>
+	<!-- Tiamat StrongHold -->
+	<chest npcid="701501">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701527">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<!-- The Hexaway -->
+	<chest npcid="701662">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701663">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701664">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<!-- Unstable Splinter -->
+	<chest npcid="701575">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701576">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701577">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701578">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701579">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701580">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="700861">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<!-- Sarpan -->
+	<chest npcid="701474">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701341">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701342">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<chest npcid="701428">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+	<!-- Tiamaranta -->
+	<chest npcid="701473">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+</chest_templates>
