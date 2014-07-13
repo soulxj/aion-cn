@@ -90,9 +90,6 @@ public class CM_LOGIN extends AionClientPacket {
 		String user = new String(decrypted, 64, 32).trim().toLowerCase();
 		String password = new String(decrypted, 96, 32).trim();
 
-        log.info("userName=" + user);
-        log.info("password=" + password);
-
 		@SuppressWarnings("unused")
 		int ncotp = decrypted[0x7c];
 		ncotp |= decrypted[0x7d] << 8;
