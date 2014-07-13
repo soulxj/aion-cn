@@ -6,14 +6,16 @@
 	</formats>
 	<fileSets>
 		<fileSet>
-			<outputDirectory>chatserver</outputDirectory>
+			<outputDirectory>loginserver</outputDirectory>
 			<includes>
 				<include>config/**/*</include>
+				<include>data/**/*</include>
+				<include>sql/**/*</include>
 			</includes>
 		</fileSet>
 		<fileSet>
 			<directory>dist/</directory>
-			<outputDirectory>chatserver</outputDirectory>
+			<outputDirectory>loginserver</outputDirectory>
 			<includes>
 				<include>*.*</include>
 			</includes>
@@ -22,13 +24,13 @@
 	<dependencySets>
 		<dependencySet>
 			<useProjectArtifact>false</useProjectArtifact>
-			<outputDirectory>chatserver/libs</outputDirectory>
+			<outputDirectory>loginserver/libs</outputDirectory>
 		</dependencySet>
 	</dependencySets>
 	<files>
 		<file>
-			<source>./target/AL-Chat.jar</source>
-			<destName>chatserver/libs/AL-Chat.jar</destName>
+			<source>./target/AL-Login.jar</source>
+			<destName>loginserver/libs/AL-Login.jar</destName>
 		</file>
 	</files>
 </assembly>
