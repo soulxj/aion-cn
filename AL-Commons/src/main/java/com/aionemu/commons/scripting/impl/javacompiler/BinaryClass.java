@@ -16,18 +16,13 @@
  */
 package com.aionemu.commons.scripting.impl.javacompiler;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.Writer;
+import java.io.*;
 import java.net.URI;
 
-import com.sun.tools.javac.file.BaseFileObject;
+import javax.lang.model.element.Modifier;
+import javax.lang.model.element.NestingKind;
+import javax.tools.JavaFileObject;
 
-//import com.sun.tools.javac.file.BaseFileObject;
 
 /**
  * This class is just a hack to make javac compiler work with classes loaded by prevoius classloader. Also it's used as
@@ -35,7 +30,7 @@ import com.sun.tools.javac.file.BaseFileObject;
  * 
  * @author SoulKeeper
  */
-public class BinaryClass extends BaseFileObject {
+public class BinaryClass implements JavaFileObject {
 
 	/**
 	 * ClassName
@@ -59,7 +54,6 @@ public class BinaryClass extends BaseFileObject {
 	 *          class name
 	 */
 	protected BinaryClass(String name) {
-		super(null);
 		this.name = name;
 	}
 
@@ -109,7 +103,7 @@ public class BinaryClass extends BaseFileObject {
 		return baos;
 	}
 
-	/**
+    /**
 	 * Throws {@link UnsupportedOperationException}
 	 * 
 	 * @return nothing
@@ -156,7 +150,6 @@ public class BinaryClass extends BaseFileObject {
 	 *          doesn't matter
 	 * @return class name
 	 */
-	@Override
 	protected String inferBinaryName(Iterable<? extends File> path) {
 		return name;
 	}
@@ -175,7 +168,7 @@ public class BinaryClass extends BaseFileObject {
 		return Kind.CLASS.equals(kind);
 	}
 
-	/**
+    /**
 	 * Returns bytes of class
 	 * 
 	 * @return bytes of class
@@ -210,5 +203,20 @@ public class BinaryClass extends BaseFileObject {
 	public Kind getKind() {
 		return Kind.CLASS;
 	}
+
+    @Override
+    public NestingKind getNestingKind() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Modifier getAccessLevel() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Reader openReader(boolean ignoreEncodingErrors) throws IOException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 }

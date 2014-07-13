@@ -176,10 +176,5 @@
             <artifactId>guava</artifactId>
             <version>13.0.1</version>
         </dependency>
-        <dependency>
-            <groupId>com.sun.tools</groupId>
-            <artifactId>javac</artifactId>
-            <version>1.6</version>
-        </dependency>
     </dependencies>
 </project>
