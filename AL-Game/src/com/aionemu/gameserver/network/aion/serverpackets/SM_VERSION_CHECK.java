@@ -18,6 +18,7 @@ package com.aionemu.gameserver.network.aion.serverpackets;
 
 
 import com.aionemu.gameserver.GameServer;
+import com.aionemu.gameserver.configs.main.CustomConfig;
 import com.aionemu.gameserver.configs.main.GSConfig;
 import com.aionemu.gameserver.configs.main.MembershipConfig;
 import com.aionemu.gameserver.configs.network.IPConfig;
@@ -49,9 +50,6 @@ public class SM_VERSION_CHECK extends AionServerPacket {
 	private final int characterFactionsMode;
 	private final int characterCreateMode;
 
-	/**
-	 * @param chatService
-	 */
 	public SM_VERSION_CHECK(int version) {
 		this.version = version;
 
@@ -80,66 +78,60 @@ public class SM_VERSION_CHECK extends AionServerPacket {
 	 */
 	@Override
 	protected void writeImpl(AionConnection con) {
-		//aion 3.0 = 194
-		//aion 3.5 = 196
-		//aion 4.0 = 201
-		if(version < 201) {
-			//Send wrong client version
-			writeC(0x02);
-			return;
-		}
-		writeC(0x00);
-		writeC(NetworkConfig.GAMESERVER_ID);
-		writeD(130612);// start year month day
-		writeD(130423);// start year month day
-		writeD(0x00);// spacing
-		writeD(130610);// year month day
-		writeD(0x507575B5);// start server time in mili
-		writeC(0x00);// unk
-		writeC(GSConfig.SERVER_COUNTRY_CODE);// country code;
-		writeC(0x00);// unk
+        //aion 3.0 = 194
+        //aion 3.5 = 196
+        //aion 4.0 = 201
+        //aion 4.5 = 203
+        //aion 4.5.0.15 = 204 ??
+        if(version < 204) {//Send wrong client version
+            writeC(0x02);
+            return;
+        }
+        writeC(0x00);
+        writeC(NetworkConfig.GAMESERVER_ID);
+        writeD(140428);// start year month day
+        writeD(140428);// start year month day
+        writeD(0x00);// spacing
+        writeD(131216);// year month day
+        writeD(1399466550);// start server time in mili
+        writeC(0x00);// unk
+        writeC(GSConfig.SERVER_COUNTRY_CODE);// country code;
+        writeC(0x00);// unk
 
-		int serverMode = (characterLimitCount * 0x10) | characterFactionsMode;
+        int serverMode = (characterLimitCount * 0x10) | characterFactionsMode;
 
-		if (GSConfig.ENABLE_RATIO_LIMITATION) {
-			if (GameServer.getCountFor(Race.ELYOS) + GameServer.getCountFor(Race.ASMODIANS) > GSConfig.RATIO_HIGH_PLAYER_COUNT_DISABLING)
-				writeC(serverMode | 0x0C);
-			else if (GameServer.getRatiosFor(Race.ELYOS) > GSConfig.RATIO_MIN_VALUE)
-				writeC(serverMode | 0x04);
-			else if (GameServer.getRatiosFor(Race.ASMODIANS) > GSConfig.RATIO_MIN_VALUE)
-				writeC(serverMode | 0x08);
-			else
-				writeC(serverMode);
-		}
-		else {
-			writeC(serverMode | characterCreateMode);
-		}
+        if (GSConfig.ENABLE_RATIO_LIMITATION) {
+            if (GameServer.getCountFor(Race.ELYOS) + GameServer.getCountFor(Race.ASMODIANS) > GSConfig.RATIO_HIGH_PLAYER_COUNT_DISABLING)
+                writeC(serverMode | 0x0C);
+            else if (GameServer.getRatiosFor(Race.ELYOS) > GSConfig.RATIO_MIN_VALUE)
+                writeC(serverMode | 0x04);
+            else if (GameServer.getRatiosFor(Race.ASMODIANS) > GSConfig.RATIO_MIN_VALUE)
+                writeC(serverMode | 0x08);
+            else
+                writeC(serverMode);
+        }else {
+            writeC(serverMode | characterCreateMode);
+        }
 
-		writeD((int) (System.currentTimeMillis() / 1000));
-		writeH(350);//unk
-		writeH(2561);//unk
-		writeH(2561);//unk
-		writeH(5140);//unk
-		writeH(286);//unk
-		writeC(GSConfig.CHARACTER_REENTRY_TIME);
-		writeC(EventService.getInstance().getEventType().getId());
-		writeD(20);//unk
-		writeD(1415577600);//unk
-		writeC(0x00);//unk
-		writeC(0x00);//unk
-		writeC(0x04);//unk
-		writeC(120);//unk
-		writeH(25233);//unk
-		writeC(2);// 4.0
-		writeC(0x01);//unk
-		writeD(0);// 4.0
-		writeH(0x01);//its loop size
-		//for... chat servers?
-		{
-			writeC(0x00);//spacer
-			// if the correct ip is not sent it will not work
-			writeB(IPConfig.getDefaultAddress());
-			writeH(ChatService.getPort());
-		}
+        writeD((int) (System.currentTimeMillis() / 1000));
+        writeD(251724126);//4.7
+        writeD(1108347393);//4.7
+        writeH(257);//4.7
+        writeH(2);//4.7
+        writeC(GSConfig.CHARACTER_REENTRY_TIME);// 20sec
+        writeC(EventService.getInstance().getEventType().getId());
+        writeD(0);// 4.7
+        writeD(-32400);//may some mask make sure it not changed - soulxj
+        writeD(1653700612);//4.7
+        writeC(2);//4.7
+        writeD(0);//4.7
+        writeD(0);//4.7
+        writeD(17545216);//4.7
+        writeD(65792);//4.7
+        writeD(16777216);//4.7
+        writeH(0);//4.7
+        writeB(IPConfig.getDefaultAddress());
+        writeH(ChatService.getPort());
+
 	}
 }

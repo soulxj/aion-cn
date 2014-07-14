@@ -62,7 +62,7 @@ public class Crypt {
 		log.debug("new encrypt key: " + packetKey);
 
 		/** false key that will be sent to aion client in SM_KEY packet */
-		return (key ^ 0xCD92E4D9) + 0x3FF2CCCF;
+        return (key ^ 0xCD92E4DD) + 0x3FF2CCCF;
 	}
 
 	/**
@@ -103,6 +103,6 @@ public class Crypt {
 	 * @return obfuscated opcodec
 	 */
 	public static final int encodeOpcodec(int op) {
-		return (op + 0xC9) ^ 0xD9;
+        return (op + 0xCC) ^ 0xDD;
 	}
 }

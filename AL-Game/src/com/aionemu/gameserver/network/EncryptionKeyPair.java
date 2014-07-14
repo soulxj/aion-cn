@@ -25,15 +25,13 @@ public class EncryptionKeyPair {
 
 	/**
 	 * keys index to access SERVER encryption key
-	 * 
-	 * @see EncryptionKeyPair.keys
+	 *
 	 */
 	private static final int SERVER = 0;
 
 	/**
 	 * keys index to access CLIENT encryption key
-	 * 
-	 * @see EncryptionKeyPair.keys
+	 *
 	 */
 	private static final int CLIENT = 1;
 
