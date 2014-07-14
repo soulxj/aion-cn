@@ -28,7 +28,7 @@ import com.aionemu.loginserver.network.aion.LoginConnection;
 
 /**
  * @author -Nemesiss-
- * @modified cura
+ * @modified xjplay@yahoo.com
  */
 public class SM_SERVER_LIST extends AionServerPacket {
 	public SM_SERVER_LIST() {
@@ -40,7 +40,7 @@ public class SM_SERVER_LIST extends AionServerPacket {
 		Map<Integer, Integer> charactersCountOnServer = null;
 
 		int accountId = con.getAccount().getId();
-        int accessLevel = con.getAccount().getAccessLevel();
+        //int accessLevel = con.getAccount().getAccessLevel();
 		int maxId = 0;
 
 		charactersCountOnServer = AccountController.getGSCharacterCountsFor(accountId);
@@ -59,12 +59,7 @@ public class SM_SERVER_LIST extends AionServerPacket {
 			writeH(gsi.getCurrentPlayers());// currentPlayers
 			writeH(gsi.getMaxPlayers());// maxPlayers
 			writeC(gsi.isOnline() ? 1 : 0);// ServerStatus, up=1
-            // bits); 1 display table cell; 0 not used
-            if(!Config.MAINTENANCE_MOD){
-                writeD(0x01);
-            }else{
-                writeD(accessLevel >= Config.MAINTENANCE_MOD_GMLEVEL ? 0x01 : 0x00);
-            }
+            writeD(0x01); // bits); 1 display table cell; 0 not used
 			writeC(1);// server.brackets ? 0x01 : 0x00);
 		}
 

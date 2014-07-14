@@ -139,7 +139,7 @@ public class AionConnection extends AConnection {
 		state = State.CONNECTED;
 
 		String ip = getIP();
-		log.debug("connection from: " + ip);
+		log.info("connection from: " + ip);
 
 		pingChecker = new PingChecker();
 		pingChecker.start();
@@ -212,7 +212,7 @@ public class AionConnection extends AConnection {
 						else {
 							long diff = System.currentTimeMillis() - last;
 							if(diff < pff[opcode]) {
-								log.warn(this+" has flooding "+pck.getClass().getSimpleName()+" "+diff);
+								log.warn(this + " has flooding " + pck.getPacketName() + " "+diff);
 								switch(SecurityConfig.PFF_LEVEL) {
 									case 1: //disconnect
 										return false;

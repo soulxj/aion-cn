@@ -66,25 +66,37 @@ public class SM_CHARACTER_LIST extends PlayerInfo {
 			writePlayerInfo(playerData);
 
 			writeD(player.getPlayerSettings().getDisplay());//display helmet 0 show, 5 dont show
+            //writeH(pbd.getDisplay()); //display TODO FIX
+            //writeH(pbd.getDeny());//deny TODO FIX
 			writeD(0);
 			writeD(0); 
 			writeD(DAOManager.getDAO(MailDAO.class).haveUnread(pcd.getPlayerObjId()) ? 1 : 0); // mail
 			writeD(0); //unk
 			writeD(0); //unk
 			writeQ(BrokerService.getInstance().getCollectedMoney(pcd)); // collected money from broker
-			writeD(0);
 
-			if(cbi != null && cbi.getEnd() > System.currentTimeMillis()/1000){
-				//client wants int so let's hope we do not reach long limit with timestamp while this server is used :P
-				writeD((int) cbi.getStart()); //startPunishDate
-				writeD((int) cbi.getEnd()); //endPunishDate
-				writeS(cbi.getReason());
-			}
-			else {
-				writeD(0);
-				writeD(0);
-				writeH(0);
-			}
+            writeD(0); // unk 4.5
+            writeD(0); // unk 4.5
+            writeD(0); // unk 4.5
+            writeD(0); // unk 4.5
+
+            writeB(new byte[88]); // unk 4.5.0.18
+            //TODO
+            if(cbi != null && cbi.getEnd() > System.currentTimeMillis()/1000){
+                //client wants int so let's hope we do not reach long limit with timestamp while this server is used :P
+                writeD(0);
+                writeD((int) cbi.getStart()); //startPunishDate
+                writeD((int) cbi.getEnd()); //endPunishDate
+                writeS(cbi.getReason());
+
+
+            }else {
+                writeD(0);
+                writeD(0);
+                writeD(0);
+                writeH(0);
+
+            }
 		}
 	}
 }
