@@ -38,6 +38,7 @@ public class SM_ABYSS_RANK extends AionServerPacket {
 	@Override
 	protected void writeImpl(AionConnection con) {
 		writeQ(rank.getAp()); // curAP
+        writeD(0);//rank.getFame()); // current Fame points 4.5
 		writeD(currentRankId); // curRank
 		writeD(rank.getTopRanking()); // curRating
 
@@ -47,15 +48,24 @@ public class SM_ABYSS_RANK extends AionServerPacket {
 		writeD(rank.getAllKill()); // allKill
 		writeD(rank.getMaxRank()); // maxRank
 
-		writeD(rank.getDailyKill()); // dayKill
-		writeQ(rank.getDailyAP()); // dayAP
+        writeH(rank.getDailyKill()); // dayKill
+        writeH(0);
+        writeD(rank.getDailyAP());
+        writeD(0);
 
-		writeD(rank.getWeeklyKill()); // weekKill
-		writeQ(rank.getWeeklyAP()); // weekAP
+        writeD(0);//rank.getDailyFame()); // 4.5 New
 
-		writeD(rank.getLastKill()); // laterKill
-		writeQ(rank.getLastAP()); // laterAP
+        writeD(rank.getWeeklyKill()); // weekKill
+        writeQ(rank.getWeeklyAP()); // weekAP
 
-		writeC(0x00); // unk
+        writeD(0);//rank.getWeeklyFame()); // 4.5 New
+
+        writeD(rank.getLastKill()); // laterKill
+        writeQ(rank.getLastAP()); // laterAP
+
+        writeD(0);//rank.getLastFame()); // 4.5 New
+
+        writeC(0x00); // unk
+
 	}
 }

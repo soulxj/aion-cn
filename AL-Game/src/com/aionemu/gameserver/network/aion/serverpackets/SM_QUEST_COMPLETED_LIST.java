@@ -39,9 +39,11 @@ public class SM_QUEST_COMPLETED_LIST extends AionServerPacket {
 		writeH(-questState.size() & 0xFFFF);
 		//QuestsData QUEST_DATA = DataManager.QUEST_DATA;
 		for (QuestState qs : questState) {
-			writeD(qs.getQuestId());
+			writeH(qs.getQuestId());
+            writeH(0x00);
 		//	writeH(QUEST_DATA.getQuestById(qs.getQuestId()).getCategory().getId());
 			writeC(qs.getCompleteCount());
+            writeC(0x01);
 		}
 		FastList.recycle(questState);
 		questState = null;

@@ -140,7 +140,7 @@ public class AionPacketHandlerFactory {
         addPacket(new CM_LEGION_SEND_EMBLEM(0xCD, State.IN_GAME)); //4.5
         addPacket(new CM_LEGION_SEND_EMBLEM_INFO(0xD2, State.IN_GAME)); //4.5
         addPacket(new CM_LEGION_TABS(0x115, State.IN_GAME)); //4.5
-        addPacket(new CM_LEGION_UPLOAD_EMBLEM(0x163, State.IN_GAME)); //4.5
+        addPacket(new CM_LEGION_UPLOAD_EMBLEM(0x178, State.IN_GAME)); //4.5
         addPacket(new CM_LEGION_UPLOAD_INFO(0x162, State.IN_GAME)); //4.5
         addPacket(new CM_LEGION_WH_KINAH(0x2EE, State.IN_GAME)); //4.5
         addPacket(new CM_LEVEL_READY(0xAB, State.IN_GAME)); //4.5
@@ -195,7 +195,7 @@ public class AionPacketHandlerFactory {
         addPacket(new CM_SHOW_DIALOG(0x116, State.IN_GAME)); //4.5
         addPacket(new CM_SHOW_FRIENDLIST(0x184, State.IN_GAME)); //4.5
         addPacket(new CM_SHOW_MAP(0x166, State.IN_GAME)); //4.5
-        addPacket(new CM_SPLIT_ITEM(0x17F, State.IN_GAME)); //4.5
+        addPacket(new CM_SPLIT_ITEM(0x164, State.IN_GAME)); //4.5
         addPacket(new CM_START_LOOT(0x178, State.IN_GAME)); //4.5
         addPacket(new CM_STOP_TRAINING(0x136, State.IN_GAME)); //4.5
         //addPacket(new CM_SUBZONE_CHANGE(0x161, State.IN_GAME)); //4.5
@@ -204,7 +204,7 @@ public class AionPacketHandlerFactory {
         addPacket(new CM_SUMMON_COMMAND(0x15B, State.IN_GAME)); //4.5
         addPacket(new CM_SUMMON_EMOTION(0x168, State.IN_GAME)); //4.5
         addPacket(new CM_SUMMON_MOVE(0x16B, State.IN_GAME)); //4.5
-        addPacket(new CM_TARGET_SELECT(0xFD, State.IN_GAME)); //4.5
+        addPacket(new CM_TARGET_SELECT(0xE6, State.IN_GAME)); //4.5
         addPacket(new CM_TELEPORT_DONE(0xAD, State.IN_GAME)); //4.5
         addPacket(new CM_TELEPORT_SELECT(0x176, State.IN_GAME)); //4.5
         addPacket(new CM_TIME_CHECK(0xD0, State.CONNECTED, State.AUTHED, State.IN_GAME)); //4.5
