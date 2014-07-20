@@ -40,7 +40,8 @@ public class SM_QUEST_LIST extends AionServerPacket {
 		writeH(-questState.size() & 0xFFFF);
 
 		for (QuestState qs : questState) {
-			writeD(qs.getQuestId());
+			writeH(qs.getQuestId());
+            writeH(0x00);
 			writeC(qs.getStatus().value());
 			writeD(qs.getQuestVars().getQuestVars());
 			writeC(qs.getCompleteCount());

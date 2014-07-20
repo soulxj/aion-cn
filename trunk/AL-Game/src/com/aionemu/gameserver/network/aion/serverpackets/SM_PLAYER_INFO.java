@@ -157,18 +157,15 @@ public class SM_PLAYER_INFO extends AionServerPacket {
 		writeH(pcd.getDp());// current dp
 		writeC(0x00);// unk (0x00)
 
-		List<Item> items = player.getEquipment().getEquippedForApparence();
-		short mask = 0;
-		for (Item item : items) {
-			if (item.getItemTemplate().isTwoHandWeapon()) {
-				ItemSlot[] slots = ItemSlot.getSlotsFor(item.getEquipmentSlot());
-				mask |= slots[0].getSlotIdMask();
-			}
-			else {
-				mask |= item.getEquipmentSlot();
-			}
-		}
-		writeH(mask); // Wrong !!! It's item count, but doesn't work
+        List<Item> items = player.getEquipment().getEquippedForApparence();
+        short mask = 0;
+
+        for (Item item : items) {
+            mask |= item.getEquipmentSlot();
+        }
+
+        writeH(mask);
+        writeH(0x00);//4.7
 
 		for (Item item : items) {
 			if (item.getEquipmentSlot() < Short.MAX_VALUE * 2) {
@@ -176,7 +173,8 @@ public class SM_PLAYER_INFO extends AionServerPacket {
 				GodStone godStone = item.getGodStone();
 				writeD(godStone != null ? godStone.getItemId() : 0);
 				writeD(item.getItemColor());
-				writeH(0x00);// unk (0x00)
+				writeH(item.getEnchantLevel());
+                writeH(0x00);//4.7
 			}
 		}
 
@@ -191,7 +189,7 @@ public class SM_PLAYER_INFO extends AionServerPacket {
 		writeC(playerAppearance.getFaceContour());
 		writeC(playerAppearance.getExpression());
 		
-		writeC(5); // unk 0x05 0x06
+		writeC(0x06); // unk 0x05 0x06
 		
 		writeC(playerAppearance.getJawLine());
 		writeC(playerAppearance.getForehead());

@@ -108,11 +108,11 @@ public class SM_STATS_INFO extends AionServerPacket {
 		writeH(0);// unk 3.0
 
 		writeD(pgs.getPDef().getCurrent());// [current pdef]
-		writeH(pgs.getMAttack().getCurrent());// [current magic attack]
-		writeH(0); // unk 3.0
+		writeD(pgs.getMAttack().getCurrent());// [current magic attack]
+		//writeH(0); // unk 3.0
 		writeD(pgs.getMDef().getCurrent()); // [Current magic def]
-		writeH(pgs.getMResist().getCurrent());// [current mres]
-		writeH(0);// unk 3.0
+		writeD(pgs.getMResist().getCurrent());// [current mres]
+		//writeH(0);// unk 3.0
 		writeF(pgs.getAttackRange().getCurrent() / 1000f);// attack range
 		writeH(pgs.getAttackSpeed().getCurrent());// attack speed
 		writeH(pgs.getEvasion().getCurrent());// [current evasion]
@@ -157,7 +157,7 @@ public class SM_STATS_INFO extends AionServerPacket {
 		
 		writeH(0); //4.3 NA
 		writeH(0); //4.3 NA
-		writeH(1); //4.3 NA
+		writeH(0); //4.3 NA
 		writeH(0); //4.3 NA
 
 		writeH(pgs.getPower().getBase());// [base power]
@@ -181,9 +181,9 @@ public class SM_STATS_INFO extends AionServerPacket {
 		writeD(pgs.getMAttack().getBase());// [base magic attack]
 		writeD(pgs.getPDef().getBase()); // [base pdef]
 		writeD(pgs.getMDef().getBase());// [base magic def]
-		writeH(pgs.getMResist().getBase());// [base magic res]
+		writeD(pgs.getMResist().getBase());// [base magic res]
 		writeF(pgs.getAttackRange().getBase() / 1000f);// [base attack range]
-		writeH(0); // [unk 3.5]
+
 		writeH(pgs.getEvasion().getBase());// [base evasion]
 		writeH(pgs.getParry().getBase());// [base parry]
 		writeH(pgs.getBlock().getBase());// [base block]
@@ -195,7 +195,7 @@ public class SM_STATS_INFO extends AionServerPacket {
 		writeH(pgs.getMainHandPAccuracy().getBase());// [base main hand accuracy]
 		writeH(pgs.getOffHandPAccuracy().getBase());// [base off hand accuracy]
 
-		writeH(0);// [unk]
+		writeH(1);// [unk]
 		writeH(pgs.getMAccuracy().getBase());// [base magic accuracy]
 		writeH(pgs.getStat(StatEnum.CONCENTRATION, 0).getBase());// [base concentration]
 		writeH(pgs.getMBoost().getBase());// [base magic boost]

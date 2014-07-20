@@ -50,6 +50,7 @@ public class SM_ABNORMAL_EFFECT extends AionServerPacket {
 		writeD(0); // unk
 		writeD(abnormals); // unk
 		writeD(0); // unk
+        writeC(0x40); // 4.5 - what exactly is this?, can 0x40
 		writeH(filtered.size()); // effects size
 
 		for (Effect effect : filtered) {
