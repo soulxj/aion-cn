@@ -68,7 +68,7 @@ public class SM_INVENTORY_INFO extends AionServerPacket {
 
 		writeD(item.getObjectId());
 		writeD(itemTemplate.getTemplateId());
-		writeNameId(itemTemplate.getNameId());
+		writeNameId(itemTemplate.getNameId());//hdh
 
 		ItemInfoBlob itemInfoBlob = ItemInfoBlob.getFullBlob(player, item);
 		itemInfoBlob.writeMe(getBuf());
