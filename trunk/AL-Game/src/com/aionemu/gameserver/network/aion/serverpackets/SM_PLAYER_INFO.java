@@ -88,16 +88,20 @@ public class SM_PLAYER_INFO extends AionServerPacket {
 		 * A3 female asmodian A2 male asmodian A1 female elyos A0 male elyos
 		 */
 		writeD(pcd.getTemplateId());
-		writeD(0x00);//new 4.3 NA
-		/**
-		 * Transformed state - send transformed model id Regular state - send player model id (from common data)
-		 */
-		int model = player.getTransformModel().getModelId();
-		writeD(model != 0 ? model : pcd.getTemplateId());
-		writeC(0x00); // new 2.0 Packet --- probably pet info?
-		writeD(player.getTransformModel().getType().getId());
-		writeC(enemy ? 0x00 : 0x26);
+        writeD(0x00);//player.getRideATId() != 0 ? player.getRideATId() : 0);//4.5 new for robot?
+        /**
+         * Transformed state - send transformed model id Regular state - send player model id (from common data)
+         */
+        writeD(player.getTransformModel().getModelId() == 0 ? pcd.getTemplateId() : player.getTransformModel().getModelId());
 
+
+        writeC(0x00); // (2.5) 0 default, can be 3
+        writeC(0x01); // (2.5) 1 default, can be 0 if the previous is 3
+        writeC(0x00);
+        writeC(0x00);
+        writeC(0x00);
+
+		writeC(enemy ? 0x00 : 0x26);
 		writeC(raceId); // race
 		writeC(pcd.getPlayerClass().getClassId());
 		writeC(genderId); // sex

@@ -137,10 +137,12 @@ public class SM_NPC_INFO extends AionServerPacket {
 
 		if (gear == null) {
 			writeH(0x00);
+            writeH(0x00);//add 4.7 //TODO CHECKS
 			writeF(boundRadius.getFront());
 		}
 		else {
 			writeH(gear.getItemsMask());
+            writeH(0x00);//add 4.7
 			for (Entry<ItemSlot, ItemTemplate> item : gear) // getting it from template ( later if we make sure that npcs
 			// actually use items, we'll make Item from it )
 			{
@@ -150,6 +152,7 @@ public class SM_NPC_INFO extends AionServerPacket {
 				writeD(0x00);
 				writeD(0x00);
 				writeH(0x00);
+                writeH(0x00);//add 4.7
 			}
 			// we don't know weapon dimensions, just add 0.1
 			writeF(boundRadius.getFront() + 0.125f + (hasWeapon ? 0.1f : 0f));
