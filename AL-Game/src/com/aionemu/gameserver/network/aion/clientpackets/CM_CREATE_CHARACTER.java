@@ -46,7 +46,7 @@ import com.aionemu.gameserver.utils.idfactory.IDFactory;
  * In this packets aion client is requesting creation of character.
  * 
  * @author -Nemesiss-
- * @modified cura
+ * @modified SoulXj
  */
 public class CM_CREATE_CHARACTER extends AionClientPacket {
 
@@ -54,6 +54,8 @@ public class CM_CREATE_CHARACTER extends AionClientPacket {
 	private PlayerAppearance playerAppearance;
 	/** Player base data */
 	private PlayerCommonData playerCommonData;
+
+    private int step;
 
 	/**
 	 * Constructs new instance of <tt>CM_CREATE_CHARACTER </tt> packet
@@ -69,7 +71,7 @@ public class CM_CREATE_CHARACTER extends AionClientPacket {
 	 */
 	@Override
 	protected void readImpl() {
-		readD(); // ignored for now
+		readD(); // playerOk2
 		readS(); // something + accointId
 
 		playerCommonData = new PlayerCommonData(IDFactory.getInstance().nextId());
@@ -77,31 +79,35 @@ public class CM_CREATE_CHARACTER extends AionClientPacket {
 
 		playerCommonData.setName(name);
 
-		readB(50 - (name.length() * 2)); // some shit? 2.5.x
+		readB(50 - (name.length() * 2)); // some shit? total 52byte
 
 		playerCommonData.setLevel(1);
+
 		playerCommonData.setGender(readD() == 0 ? Gender.MALE : Gender.FEMALE);
 		playerCommonData.setRace(readD() == 0 ? Race.ELYOS : Race.ASMODIANS);
+
 		playerCommonData.setPlayerClass(PlayerClass.getPlayerClassById((byte) readD()));
 
 		if (getConnection().getAccount().getMembership() >= MembershipConfig.STIGMA_SLOT_QUEST) {
-			playerCommonData.setAdvencedStigmaSlotSize(11);
+			playerCommonData.setAdvencedStigmaSlotSize(11);//TODO RETAIL
 		}
 
 		playerAppearance = new PlayerAppearance();
 
 		playerAppearance.setVoice(readD());
+
 		playerAppearance.setSkinRGB(readD());
 		playerAppearance.setHairRGB(readD());
 		playerAppearance.setEyeRGB(readD());
 		playerAppearance.setLipRGB(readD());
+
 		playerAppearance.setFace(readC());
 		playerAppearance.setHair(readC());
 		playerAppearance.setDeco(readC());
 		playerAppearance.setTattoo(readC());
 		playerAppearance.setFaceContour(readC());
 		playerAppearance.setExpression(readC());
-		readC(); // always 4 o0 // 5 in 1.5.x
+		readC(); // always 4 o0 // 5 in 1.5.x 0x06
 		playerAppearance.setJawLine(readC());
 		playerAppearance.setForehead(readC());
 
@@ -159,6 +165,7 @@ public class CM_CREATE_CHARACTER extends AionClientPacket {
 		readC();
 		readC();
 		playerAppearance.setHeight(readF());
+        step = readC(); //0x01 第一次01 以后 00
 	}
 
 	/**
@@ -174,6 +181,12 @@ public class CM_CREATE_CHARACTER extends AionClientPacket {
 		if (client.getActivePlayer() != null) {
 			return;
 		}
+
+        if(step == 1){
+            client.sendPacket(new SM_CREATE_CHARACTER(null, SM_CREATE_CHARACTER.RESPONE_CREATE_READY));
+            return;
+        }
+
 		if (account.getMembership() >= MembershipConfig.CHARACTER_ADDITIONAL_ENABLE) {
 			if (MembershipConfig.CHARACTER_ADDITIONAL_COUNT <= account.size()) {
 				client.sendPacket(new SM_CREATE_CHARACTER(null, SM_CREATE_CHARACTER.RESPONSE_SERVER_LIMIT_EXCEEDED));

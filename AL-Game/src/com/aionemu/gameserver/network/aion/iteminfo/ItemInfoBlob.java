@@ -99,10 +99,9 @@ public class ItemInfoBlob extends PacketWriteHelper {
 						blob.addBlobEntry(ItemBlobType.SLOTS_ARMOR);
 						break;
 				}
-			}
-			else if (itemTemplate.isWeapon())
-				blob.addBlobEntry(ItemBlobType.SLOTS_WEAPON);
-			else if (item.getEquipmentType() == EquipType.ARMOR)
+			}else if (itemTemplate.isWeapon()) {
+                blob.addBlobEntry(ItemBlobType.SLOTS_WEAPON);
+            }else if (item.getEquipmentType() == EquipType.ARMOR)
 				blob.addBlobEntry(ItemBlobType.SLOTS_ACCESSORY); // power shards, helmets, earrings, rings, belts
 
 			// MANA STONES

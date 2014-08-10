@@ -164,7 +164,5 @@ public abstract class PlayerInfo extends AionServerPacket {
         writeB(stupidNc);
         writeD(accPlData.getDeletionTimeInSeconds());
 
-        writeD(accPlData.getDeletionTimeInSeconds());
-
     }
 }

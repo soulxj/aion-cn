@@ -65,18 +65,20 @@ public class SM_SKILL_LIST extends AionServerPacket {
 
 		if (size > 0) {
 			for (PlayerSkillEntry entry : skillList) {
+                writeC(0x00);//unk 47
 				writeH(entry.getSkillId());// id
-				writeH(entry.getSkillLevel());// lvl
+				writeC(entry.getSkillLevel());// lvl
 				writeC(0x00);
 				int extraLevel = entry.getExtraLvl();
 				writeC(extraLevel);
+                writeC(entry.isStigma() ? 1 : 0); // stigma
 				if (isNew && extraLevel == 0 && !entry.isStigma())
 					writeD((int) (System.currentTimeMillis() / 1000)); // Learned date NCSoft......
 				else
 					writeD(0);
-				writeC(entry.isStigma() ? 1 : 0); // stigma
 			}
 		}
+        writeC(0x00);//unk 47
 		writeD(messageId);
 		if (messageId != 0) {
 			writeH(0x24); // unk
