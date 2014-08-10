@@ -46,7 +46,7 @@ public class ManaStoneInfoBlobEntry extends ItemBlobEntry {
 		writeD(buf, item.getItemSkinTemplate().getTemplateId());
 		writeC(buf, item.getOptionalSocket());
 		writeC(buf, item.getItemTemplate().getMaxEnchantLevel());
-
+        writeC(buf, 0);//unk
 		writeItemStones(buf);
 
 		ItemStone god = item.getGodStone();
@@ -77,13 +77,13 @@ public class ManaStoneInfoBlobEntry extends ItemBlobEntry {
 			writeD(buf, 0); // Idian Stone template ID
 			writeC(buf, 0); // polish statset ID
 		}
-	
+
+	    writeB(buf,new byte[77]);//unknow
 	}
 
 	/**
 	 * Writes manastones
-	 * 
-	 * @param item
+	 *
 	 */
 	private void writeItemStones(ByteBuffer buf) {
 		Item item = ownerItem;
@@ -107,6 +107,6 @@ public class ManaStoneInfoBlobEntry extends ItemBlobEntry {
 
 	@Override
 	public int getSize() {
-		return 12 * 2 + 24 + 1 + 5;
+		return 1 * 7 + 4 * 6 + 24 + 77;
 	}
 }

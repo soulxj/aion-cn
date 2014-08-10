@@ -55,13 +55,14 @@ public class SM_UPDATE_PLAYER_APPEARANCE extends AionServerPacket {
 		}
 
 		writeH(mask); // Wrong !!! It's item count, but doesn't work
-
+        writeH(0x00);//4.7
 		for (Item item : items) {
 			writeD(item.getItemSkinTemplate().getTemplateId());
 			GodStone godStone = item.getGodStone();
 			writeD(godStone != null ? godStone.getItemId() : 0);
 			writeD(item.getItemColor());
-			writeH(0x00);// unk (0x00)
+			writeH(item.getEnchantLevel());// unk (0x00)
+            writeH(0x00);//4.7
 		}
 	}
 }

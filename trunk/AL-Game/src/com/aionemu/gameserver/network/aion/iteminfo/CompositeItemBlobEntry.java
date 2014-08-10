@@ -42,6 +42,7 @@ public class CompositeItemBlobEntry extends ItemBlobEntry {
 		writeD(buf, item.getFusionedItemId());
 		writeFusionStones(buf);
 		writeH(buf, item.hasOptionalFusionSocket() ? item.getOptionalFusionSocket() : 0x00);
+        writeB(buf,new byte[25]);
 	}
 
 	private void writeFusionStones(ByteBuffer buf) {
@@ -65,6 +66,6 @@ public class CompositeItemBlobEntry extends ItemBlobEntry {
 
 	@Override
 	public int getSize() {
-		return 12 * 2 + 6;
+		return 12 * 2 + 6 + 25;
 	}
 }

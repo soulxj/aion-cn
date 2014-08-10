@@ -20,6 +20,8 @@ package com.aionemu.gameserver.network.aion.serverpackets;
 import com.aionemu.gameserver.model.account.PlayerAccountData;
 import com.aionemu.gameserver.network.aion.AionConnection;
 import com.aionemu.gameserver.network.aion.PlayerInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * This packet is response for CM_CREATE_CHARACTER
@@ -28,6 +30,7 @@ import com.aionemu.gameserver.network.aion.PlayerInfo;
  */
 public class SM_CREATE_CHARACTER extends PlayerInfo {
 
+    private static final Logger logger = LoggerFactory.getLogger(SM_CREATE_CHARACTER.class);
 	/** If response is ok */
 	public static final int RESPONSE_OK = 0x00;
 
@@ -46,6 +49,8 @@ public class SM_CREATE_CHARACTER extends PlayerInfo {
 	public static final int RESPONSE_NAME_RESERVED = 11;
 	/** You cannot create characters of other races in the same server */
 	public static final int RESPONSE_OTHER_RACE = 12;
+
+    public static final int RESPONE_CREATE_READY = 20;
 
 	/**
 	 * response code
@@ -77,13 +82,11 @@ public class SM_CREATE_CHARACTER extends PlayerInfo {
 	@Override
 	protected void writeImpl(AionConnection con) {
 		writeD(responseCode);
-
 		if (responseCode == RESPONSE_OK) {
 			writePlayerInfo(player); // if everything is fine, all the character's data should be sent
-			writeB(new byte[40]);
-		}
-		else {
-			writeB(new byte[448]); // if something is wrong, only return code should be sent in the packet
+			writeB(new byte[136]);
+		}else {
+			writeB(new byte[616]); // if something is wrong, only return code should be sent in the packet
 		}
 	}
 }
