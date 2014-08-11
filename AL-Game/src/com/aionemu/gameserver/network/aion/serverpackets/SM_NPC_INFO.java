@@ -136,13 +136,11 @@ public class SM_NPC_INFO extends AionServerPacket {
 		BoundRadius boundRadius = npcTemplate.getBoundRadius();
 
 		if (gear == null) {
-			writeH(0x00);
-            writeH(0x00);//add 4.7 //TODO CHECKS
+			writeD(0x00);
 			writeF(boundRadius.getFront());
 		}
 		else {
-			writeH(gear.getItemsMask());
-            writeH(0x00);//add 4.7
+			writeD(gear.getItemsMask());
 			for (Entry<ItemSlot, ItemTemplate> item : gear) // getting it from template ( later if we make sure that npcs
 			// actually use items, we'll make Item from it )
 			{

@@ -45,10 +45,10 @@ public class ManaStoneInfoBlobEntry extends ItemBlobEntry {
 		writeC(buf, item.getEnchantLevel()); // enchant (1-15)
 		writeD(buf, item.getItemSkinTemplate().getTemplateId());
 		writeC(buf, item.getOptionalSocket());
-		writeC(buf, item.getItemTemplate().getMaxEnchantLevel());
+		writeC(buf, item.getItemTemplate().getMaxEnchantLevel());//bones
         writeC(buf, 0);//unk
 		writeItemStones(buf);
-
+        writeB(buf,new byte[24]);//unknow
 		ItemStone god = item.getGodStone();
 		writeD(buf, god == null ? 0 : god.getItemId());
 		
@@ -78,7 +78,7 @@ public class ManaStoneInfoBlobEntry extends ItemBlobEntry {
 			writeC(buf, 0); // polish statset ID
 		}
 
-	    writeB(buf,new byte[77]);//unknow
+	    writeB(buf,new byte[53]);//unknow
 	}
 
 	/**
